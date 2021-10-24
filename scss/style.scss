@@ -1,3 +1,24 @@
 body {
     background-color: burlywood;
 }
+
+header {
+    // 寬度 高度 背景顏色 單位像素（px）
+    width: 300px;
+    height:25px;
+    background-color: coral;
+}
+
+#main {
+    // 寬度 高度 背景顏色
+    width: 600px;
+    height: 450px;
+    background-color: crimson;
+}
+
+footer {
+    // 寬度 高度 背景顏色
+    width: 100px;
+    height: 350px;
+    background-color: darkblue;
+}
