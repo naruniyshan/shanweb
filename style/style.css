@@ -9,7 +9,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  .DN, header nav #YudoIcon, header nav .YudoBtnBox, footer address {
+  header nav #YudoIcon, header nav .YudoBtnBox, footer address {
     display: none;
   }
   header {

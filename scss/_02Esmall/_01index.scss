@@ -15,7 +15,7 @@
 // }
 
 // 繼承區（相同樣式）
-.DN {
+%DN {
     // 隱藏
     display: none;
 }
@@ -26,11 +26,11 @@ header {
     nav {
         #YudoIcon {
             // 呼叫繼承物件
-            @extend .DN;
+            @extend %DN;
         }
         .YudoBtnBox {
             // 呼叫繼承物件
-            @extend .DN;
+            @extend %DN;
         }
     }
 }
@@ -38,6 +38,6 @@ header {
 footer {
     address {
         //呼叫繼承物件
-        @extend .DN;
+        @extend %DN;
     }
 }
