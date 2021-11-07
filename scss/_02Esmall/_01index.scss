@@ -1,4 +1,10 @@
+// scss 巢狀寫法
 header {
-    // 背景顏色
-    background-color: brown;
+    nav {
+        .YudoSubNav {
+            ul {
+                background-color: burlywood;
+            }
+        }
+    }
 }

@@ -9,7 +9,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  header {
-    background-color: brown;
+  header nav .YudoSubNav ul {
+    background-color: burlywood;
   }
 }
