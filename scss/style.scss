@@ -22,12 +22,12 @@
     @import '_05Large/01index';
 }
 
-// 營幕裝置 >=1200px Xlarge min-width（最大寬度 含等於）
+// 螢幕裝置 >=1200px Xlarge min-width（最大寬度 含等於）
 @media screen and ( min-width: 1200px ) {
     @import '_06Xlarge/01index';
 }
 
-// 超大營幕裝置 >= 1400px XXlarge min-width（最大寬度 含等於）
+// 超大螢幕裝置 >= 1400px XXlarge min-width（最大寬度 含等於）
 @media screen and ( min-width: 1400px ) {
     @import '_07XXlarge/01index';
 }
