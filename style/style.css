@@ -10,6 +10,9 @@ img {
 
 @media screen and (max-width: 576px) {
   header nav #YudoIcon {
-    background-color: burlywood;
+    display: none;
+  }
+  header nav .YudoBtnBox {
+    display: none;
   }
 }

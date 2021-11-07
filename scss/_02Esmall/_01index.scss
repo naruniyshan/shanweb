@@ -5,7 +5,12 @@
 header {
     nav {
         #YudoIcon {
-            background-color: burlywood;
+            // 隱藏
+            display: none;
+        }
+        .YudoBtnBox {
+            // 隱藏
+            display: none;
         }
     }
 }
