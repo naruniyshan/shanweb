@@ -1,1 +1,1 @@
-*{margin:0 auto;padding:0}img{width:100%;height:auto}@media screen and (max-width: 576px){header{width:100%}address,#YudoIcon,.YudoBtnBox{display:none}#MenuBtn{background-color:burlywood}}
+*{margin:0 auto;padding:0}img{width:100%;height:auto}@media screen and (max-width: 576px){.DN,header nav #YudoIcon,header nav .YudoBtnBox,footer address{display:none}header{width:100%}}

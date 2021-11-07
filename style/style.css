@@ -9,13 +9,10 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  header {
-    width: 100%;
-  }
-  address, #YudoIcon, .YudoBtnBox {
+  .DN, header nav #YudoIcon, header nav .YudoBtnBox, footer address {
     display: none;
   }
-  #MenuBtn {
-    background-color: burlywood;
+  header {
+    width: 100%;
   }
 }
