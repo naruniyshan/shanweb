@@ -1,10 +1,8 @@
 // scss 巢狀寫法
 header {
     nav {
-        .YudoSubNav {
-            ul {
-                background-color: burlywood;
-            }
+        #YudoIcon {
+            background-color: burlywood;
         }
     }
 }
