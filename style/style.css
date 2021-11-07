@@ -12,10 +12,10 @@ img {
   header {
     width: 100%;
   }
-  header nav #YudoIcon {
+  address, #YudoIcon, .YudoBtnBox {
     display: none;
   }
-  header nav .YudoBtnBox {
-    display: none;
+  #MenuBtn {
+    background-color: burlywood;
   }
 }
