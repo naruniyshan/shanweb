@@ -70,6 +70,12 @@ You may only @extend selectors within the same directive.
     width: 100%;
     background-color: yellowgreen;
   }
+  header nav #YudoIcon {
+    display: block;
+  }
+  header nav .YudoBtnBox {
+    display: block;
+  }
   header nav #MenuBtn {
     display: none;
   }

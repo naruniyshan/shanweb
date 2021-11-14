@@ -7,8 +7,12 @@ header {
     background-color: yellowgreen;
     nav {
         #YudoIcon {
+            // 開啟隱藏物件
+            @include OB;
         }
         .YudoBtnBox {
+            // 開啟隱藏物件
+            @include OB;
         }
         #MenuBtn {
             @include DN;
