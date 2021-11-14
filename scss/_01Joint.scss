@@ -26,6 +26,12 @@ You may only @extend selectors within the same directive.
     display: none;
 }
 
+// 計算區
+// 計算 header Logo 與 BtnBox 之間的寬度
+@mixin LBW($WM, $WA) {
+    width: $W10 * $WM + $WA;
+}
+
 // 撰寫 scss 的「混合函式 mixin」，修正 scss 的繼承功能，無法被 @media 使用的問題
 @mixin DN {
     display: none;

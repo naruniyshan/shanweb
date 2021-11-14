@@ -38,7 +38,8 @@ header {
         // 靠左排列（與 MenuBtn 同一行）
         #YudoLogo {
             // 寬度 % or vw（螢幕可視範圍高度的百分比）
-            width: $W10 * 8 + 5%;
+            // width: $W10 * 8 + 5%;
+            @include LBW(8, 5%);
             float: left;
             background-color: brown;
         }
