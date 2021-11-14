@@ -1,13 +1,16 @@
+/*
+大平版裝置的 Icon 與 BtnBox取消「隱藏顯示」，但無法讀取。
+因為，媒體判斷的順序是由 小尺寸語法 至 大尺寸，故 大尺寸 沒有下達任何語法時，會直接直判讀至小尺寸
+*/
 header {
     width: $W10 * 10;
     background-color: yellowgreen;
     nav {
         #YudoIcon {
-            // 呼叫 混合函式
-            @include DN;
         }
         .YudoBtnBox {
-            // 呼叫 混合函式
+        }
+        #MenuBtn {
             @include DN;
         }
     }
