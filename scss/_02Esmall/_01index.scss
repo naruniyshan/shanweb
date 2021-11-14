@@ -19,6 +19,7 @@
 header {
     // 寬度 100%;
     width: $W10 * 10;
+    height: 60px;
     background-color: violet;
     nav {
         /* 
@@ -29,6 +30,11 @@ header {
         1. nav 的父框架 header，給予高度；或是 nav 給予高度
         2. 清除浮動狀態，由 nav 設定
         */
+        width: $W10 * 10;
+        background-color: wheat;
+        // 解決方法一：給予高度；二擇一，寫入 header 或是 nav
+        // height: 65px;
+
         // 靠左排列（與 MenuBtn 同一行）
         #YudoLogo {
             float: left;
