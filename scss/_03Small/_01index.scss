@@ -1,3 +1,21 @@
 header {
-    background-color: cadetblue;
+    width: $W10 * 10;
+    background-color: aquamarine;
+    nav {
+        #YudoIcon {
+            // 呼叫 混合函式
+            @include DN;
+        }
+        .YudoBtnBox {
+            // 呼叫 混合函式
+            @include DN;
+        }
+    }
+}
+
+footer {
+    address {
+        //呼叫 混合函式
+        @include DN;
+    }
 }

@@ -1,22 +1,46 @@
+@charset "UTF-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
+You may not @extend an outer selector from within @media.
+You may only @extend selectors within the same directive.
+無法由 @media（媒體判斷）去呼叫「外部連結檔」
+*/
 @media screen and (max-width: 576px) {
-  * {
-    margin: 0 auto;
-    padding: 0;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  header nav #YudoIcon, header nav .YudoBtnBox, footer address {
-    display: none;
-  }
   header {
     width: 100%;
+  }
+  header nav #YudoIcon {
+    display: none;
+  }
+  header nav .YudoBtnBox {
+    display: none;
+  }
+  footer address {
+    display: none;
   }
 }
 
 @media screen and (min-width: 576px) {
   header {
-    background-color: cadetblue;
+    width: 100%;
+    background-color: aquamarine;
+  }
+  header nav #YudoIcon {
+    display: none;
+  }
+  header nav .YudoBtnBox {
+    display: none;
+  }
+  footer address {
+    display: none;
   }
 }

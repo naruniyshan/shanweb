@@ -19,19 +19,19 @@ header {
     width: $W10 * 10;
     nav {
         #YudoIcon {
-            // 呼叫繼承物件
-            @extend %DN;
+            // 呼叫 混合函式
+            @include DN;
         }
         .YudoBtnBox {
-            // 呼叫繼承物件
-            @extend %DN;
+            // 呼叫 混合函式
+            @include DN;
         }
     }
 }
 
 footer {
     address {
-        //呼叫繼承物件
-        @extend %DN;
+        //呼叫 混合函式
+        @include DN;
     }
 }
