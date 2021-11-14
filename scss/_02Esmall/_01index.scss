@@ -38,7 +38,10 @@ header {
 
         // 靠左排列（與 MenuBtn 同一行）
         #YudoLogo {
+            // 寬度 % or vw（螢幕可視範圍高度的百分比）
+            width: $W10 * 8;
             float: left;
+            background-color: brown;
         }
         #YudoIcon {
             // 呼叫 混合函式
@@ -50,6 +53,7 @@ header {
         }
         // 靠左排列（與 Logo 同一行）
         #MenuBtn {
+            width: $W10 * 2;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
         }

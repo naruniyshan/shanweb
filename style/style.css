@@ -33,7 +33,9 @@ You may only @extend selectors within the same directive.
     background-color: wheat;
   }
   header nav #YudoLogo {
+    width: 80%;
     float: left;
+    background-color: brown;
   }
   header nav #YudoIcon {
     display: none;
@@ -42,6 +44,7 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   header nav #MenuBtn {
+    width: 20%;
     float: left;
   }
   header nav .Clear {
