@@ -19,7 +19,6 @@
 header {
     // 寬度 100%;
     width: $W10 * 10;
-    height: 60px;
     background-color: violet;
     nav {
         /* 
@@ -32,8 +31,7 @@ header {
         */
         width: $W10 * 10;
         background-color: wheat;
-        // 解決方法一：給予高度；二擇一，寫入 header 或是 nav
-        // height: 65px;
+        // 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
 
         // 靠左排列（與 MenuBtn 同一行）
         #YudoLogo {
@@ -51,6 +49,9 @@ header {
         #MenuBtn {
             // 浮點對齊法：靠左對齊 float:left
             float: left;
+        }
+        .Clear {
+            @include ClearFloat;
         }
     }
 }
