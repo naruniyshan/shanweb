@@ -44,3 +44,35 @@ You may only @extend selectors within the same directive.
     display: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    background-color: burlywood;
+  }
+  header nav #YudoIcon {
+    display: none;
+  }
+  header nav .YudoBtnBox {
+    display: none;
+  }
+  footer address {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+    background-color: yellowgreen;
+  }
+  header nav #YudoIcon {
+    display: none;
+  }
+  header nav .YudoBtnBox {
+    display: none;
+  }
+  footer address {
+    display: none;
+  }
+}
