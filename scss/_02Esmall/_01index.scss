@@ -28,18 +28,17 @@ header {
         解決方式
         1. nav 的父框架 header，給予高度；或是 nav 給予高度
         2. 清除浮動狀態，由 nav 設定
+        3. 利用圖片高度撐開父框架的高
         */
         width: $W10 * 10;
         // 設定高度 單位為 %（未給予基準值，所以無法計算出實際高度）
-        // vh（螢幕可視範圍高度的百分比，計算出實際高度；依照裝置的高度計算）
-        height: 10vh;
         background-color: wheat;
         // 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
 
         // 靠左排列（與 MenuBtn 同一行）
         #YudoLogo {
             // 寬度 % or vw（螢幕可視範圍高度的百分比）
-            width: $W10 * 8;
+            width: $W10 * 8 + 5%;
             float: left;
             background-color: brown;
         }
@@ -53,7 +52,7 @@ header {
         }
         // 靠左排列（與 Logo 同一行）
         #MenuBtn {
-            width: $W10 * 2;
+            width: $W10 * 1 + 5%;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
         }
