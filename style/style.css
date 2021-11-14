@@ -29,6 +29,7 @@ You may only @extend selectors within the same directive.
         2. 清除浮動狀態，由 nav 設定
         */
     width: 100%;
+    height: 10vh;
     background-color: wheat;
   }
   header nav #YudoLogo {
