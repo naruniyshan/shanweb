@@ -14,10 +14,25 @@
 //     background-color: burlywood;
 // }
 
+// 目前使用的單位（數值）是 百分比（%）；網頁的固定單位--像素 px
+
 header {
     // 寬度 100%;
     width: $W10 * 10;
+    background-color: violet;
     nav {
+        /* 
+        浮動對齊的問題 float
+        1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度
+        2. nav 的父框架 header ，高度消失（展開）
+        解決方式
+        1. nav 的父框架 header，給予高度；或是 nav 給予高度
+        2. 清除浮動狀態，由 nav 設定
+        */
+        // 靠左排列（與 MenuBtn 同一行）
+        #YudoLogo {
+            float: left;
+        }
         #YudoIcon {
             // 呼叫 混合函式
             @include DN;
@@ -25,6 +40,11 @@ header {
         .YudoBtnBox {
             // 呼叫 混合函式
             @include DN;
+        }
+        // 靠左排列（與 Logo 同一行）
+        #MenuBtn {
+            // 浮點對齊法：靠左對齊 float:left
+            float: left;
         }
     }
 }
