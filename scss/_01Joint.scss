@@ -29,7 +29,23 @@ You may only @extend selectors within the same directive.
 // 計算區
 // 計算 header Logo 與 MenuBtn 之間的寬度 手機裝置
 @mixin LBW($WM, $WA) {
-    width: $W10 * $WM + $WA;
+    // 計算區 1.設變數（承載值的物件名稱）$WM=倍數 $WA=加的數值
+    $LogoW: $W10 * $WM + $WA;
+    //  MenuBtn寬度 = 父框架的總寬度（100） - Logo寬度（85）
+    $MBW: $W10 * 10 - $LogoW;
+
+
+    // 連動 計算寬度 Logo 與 MenuBtn
+
+    // 呼叫 id (標籤 或 id class)
+    #YudoLogo {
+        // 寬度
+        width: $LogoW;
+    }
+    #MenuBtn {
+        //  寬度
+        width: $MBW;
+    }
 }
 
 // 撰寫 scss 的「混合函式 mixin」，修正 scss 的繼承功能，無法被 @media 使用的問題
