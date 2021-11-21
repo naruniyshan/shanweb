@@ -20,11 +20,24 @@ header {
             // 開啟隱藏物件
             @include OB;
             width: $W10 * 3;
+            // 隱藏項目符號
+            @include DNli;
+            // 彈性佈局
+            display: flex;
         }
         .YudoBtnBox {
             // 開啟隱藏物件
             @include OB;
             width: $W10 * 10;
+            // 彈性佈局
+            display: flex;
+            // 隱藏項目符號
+            @include DNli;
+
+            // 隱藏 第二層選單
+            ul {
+                @include DN;
+            }
         }
         #MenuBtn {
             @include DN;

@@ -153,10 +153,21 @@ You may only @extend selectors within the same directive.
   header nav #YudoIcon {
     display: block;
     width: 30vw;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header nav .YudoBtnBox {
     display: block;
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  header nav .YudoBtnBox ul {
+    display: none;
   }
   header nav #MenuBtn {
     display: none;
