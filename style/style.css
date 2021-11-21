@@ -54,6 +54,20 @@ You may only @extend selectors within the same directive.
   header nav .Clear {
     clear: both;
   }
+  footer {
+    margin-top: 2rem;
+  }
+  footer hr {
+    margin-bottom: 2rem;
+  }
+  footer nav ul {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    background-color: thistle;
+  }
   footer address {
     display: none;
   }
