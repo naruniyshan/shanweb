@@ -16,7 +16,7 @@ You may only @extend selectors within the same directive.
 */
 @media screen and (max-width: 576px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: violet;
   }
   header nav {
@@ -29,11 +29,10 @@ You may only @extend selectors within the same directive.
         2. 清除浮動狀態，由 nav 設定
         3. 利用圖片高度撐開父框架的高
         */
-    width: 100%;
+    width: 100vw;
     background-color: wheat;
   }
   header nav #YudoLogo {
-    width: 85%;
     float: left;
     background-color: brown;
   }
@@ -44,7 +43,6 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   header nav #MenuBtn {
-    width: 15%;
     float: left;
   }
   header nav .Clear {
@@ -57,7 +55,7 @@ You may only @extend selectors within the same directive.
 
 @media screen and (min-width: 576px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: violet;
   }
   header nav {
@@ -70,11 +68,10 @@ You may only @extend selectors within the same directive.
         2. 清除浮動狀態，由 nav 設定
         3. 利用圖片高度撐開父框架的高
         */
-    width: 100%;
+    width: 100vw;
     background-color: #b3f5be;
   }
   header nav #YudoLogo {
-    width: 85%;
     float: left;
     background-color: brown;
   }
@@ -85,7 +82,6 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   header nav #MenuBtn {
-    width: 15%;
     float: left;
   }
   header nav .Clear {
@@ -98,7 +94,7 @@ You may only @extend selectors within the same directive.
 
 @media screen and (min-width: 768px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: violet;
   }
   header nav {
@@ -111,11 +107,10 @@ You may only @extend selectors within the same directive.
         2. 清除浮動狀態，由 nav 設定
         3. 利用圖片高度撐開父框架的高
         */
-    width: 100%;
+    width: 100vw;
     background-color: #c7b3f5;
   }
   header nav #YudoLogo {
-    width: 85%;
     float: left;
     background-color: brown;
   }
@@ -126,7 +121,6 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   header nav #MenuBtn {
-    width: 15%;
     float: left;
   }
   header nav .Clear {
@@ -143,8 +137,13 @@ You may only @extend selectors within the same directive.
 因為，媒體判斷的順序是由 小尺寸語法 至 大尺寸，故 大尺寸 沒有下達任何語法時，會直接直判讀至小尺寸
 */
   header {
-    width: 100%;
+    width: 100vw;
     background-color: yellowgreen;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header nav #YudoIcon {
     display: block;
@@ -162,7 +161,7 @@ You may only @extend selectors within the same directive.
 
 @media screen and (min-width: 1200px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: #4e32cd;
   }
   header nav #YudoIcon {
@@ -181,7 +180,7 @@ You may only @extend selectors within the same directive.
 
 @media screen and (min-width: 1400px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: #cd3266;
   }
   header nav #YudoIcon {

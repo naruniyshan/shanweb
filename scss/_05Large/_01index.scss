@@ -6,6 +6,9 @@ header {
     width: $W10 * 10;
     background-color: yellowgreen;
     nav {
+        // 彈性佈局 flex；對齊物件的父框架
+        // 顯示方式：彈性佈局
+        display: flex;
         #YudoIcon {
             // 開啟隱藏物件
             @include OB;
