@@ -1,19 +1,6 @@
 header {
     width: $W10 * 10;
     background-color: rgb(205, 50, 102);
-    nav {
-        #YudoIcon {
-            // 開啟隱藏物件
-            @include OB;
-        }
-        .YudoBtnBox {
-            // 開啟隱藏物件
-            @include OB;
-        }
-        #MenuBtn {
-            @include DN;
-        }
-    }
 }
 
 footer {
