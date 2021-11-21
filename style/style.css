@@ -34,6 +34,11 @@ You may only @extend selectors within the same directive.
   }
   header nav #YudoLogo {
     width: 85vw;
+  }
+  header nav #MenuBtn {
+    width: 15vw;
+  }
+  header nav #YudoLogo {
     float: left;
     background-color: brown;
   }
@@ -44,7 +49,6 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   header nav #MenuBtn {
-    width: 15vw;
     float: left;
   }
   header nav .Clear {
@@ -75,6 +79,11 @@ You may only @extend selectors within the same directive.
   }
   header nav #YudoLogo {
     width: 85vw;
+  }
+  header nav #MenuBtn {
+    width: 15vw;
+  }
+  header nav #YudoLogo {
     float: left;
     background-color: palevioletred;
   }
@@ -85,7 +94,6 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   header nav #MenuBtn {
-    width: 15vw;
     float: left;
   }
   header nav .Clear {
