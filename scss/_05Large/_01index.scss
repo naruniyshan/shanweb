@@ -9,13 +9,22 @@ header {
         // 彈性佈局 flex；對齊物件的父框架
         // 顯示方式：彈性佈局
         display: flex;
+        // 換行
+        flex-wrap: wrap;
+
+        // Logo 寬度 + Icon 寬度 = 總寬度 100vw（100%）
+        #YudoLogo {
+            width: $W10 * 7;
+        }
         #YudoIcon {
             // 開啟隱藏物件
             @include OB;
+            width: $W10 * 3;
         }
         .YudoBtnBox {
             // 開啟隱藏物件
             @include OB;
+            width: $W10 * 10;
         }
         #MenuBtn {
             @include DN;
