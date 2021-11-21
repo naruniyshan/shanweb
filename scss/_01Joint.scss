@@ -27,7 +27,7 @@ You may only @extend selectors within the same directive.
 }
 
 // 計算區
-// 計算 header Logo 與 BtnBox 之間的寬度
+// 計算 header Logo 與 MenuBtn 之間的寬度 手機裝置
 @mixin LBW($WM, $WA) {
     width: $W10 * $WM + $WA;
 }

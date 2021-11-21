@@ -58,13 +58,38 @@ You may only @extend selectors within the same directive.
 @media screen and (min-width: 576px) {
   header {
     width: 100%;
-    background-color: aquamarine;
+    background-color: violet;
+  }
+  header nav {
+    /* 
+        浮動對齊的問題 float
+        1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度
+        2. nav 的父框架 header ，高度消失（展開）
+        解決方式
+        1. nav 的父框架 header，給予高度；或是 nav 給予高度
+        2. 清除浮動狀態，由 nav 設定
+        3. 利用圖片高度撐開父框架的高
+        */
+    width: 100%;
+    background-color: #b3f5be;
+  }
+  header nav #YudoLogo {
+    width: 85%;
+    float: left;
+    background-color: brown;
   }
   header nav #YudoIcon {
     display: none;
   }
   header nav .YudoBtnBox {
     display: none;
+  }
+  header nav #MenuBtn {
+    width: 15%;
+    float: left;
+  }
+  header nav .Clear {
+    clear: both;
   }
   footer address {
     display: none;
@@ -74,13 +99,38 @@ You may only @extend selectors within the same directive.
 @media screen and (min-width: 768px) {
   header {
     width: 100%;
-    background-color: burlywood;
+    background-color: violet;
+  }
+  header nav {
+    /* 
+        浮動對齊的問題 float
+        1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度
+        2. nav 的父框架 header ，高度消失（展開）
+        解決方式
+        1. nav 的父框架 header，給予高度；或是 nav 給予高度
+        2. 清除浮動狀態，由 nav 設定
+        3. 利用圖片高度撐開父框架的高
+        */
+    width: 100%;
+    background-color: #c7b3f5;
+  }
+  header nav #YudoLogo {
+    width: 85%;
+    float: left;
+    background-color: brown;
   }
   header nav #YudoIcon {
     display: none;
   }
   header nav .YudoBtnBox {
     display: none;
+  }
+  header nav #MenuBtn {
+    width: 15%;
+    float: left;
+  }
+  header nav .Clear {
+    clear: both;
   }
   footer address {
     display: none;
