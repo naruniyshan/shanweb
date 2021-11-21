@@ -60,6 +60,9 @@ You may only @extend selectors within the same directive.
   footer hr {
     margin-bottom: 2rem;
   }
+  footer nav {
+    margin-bottom: 2rem;
+  }
   footer nav ul {
     width: 90%;
     display: -webkit-box;
@@ -67,6 +70,10 @@ You may only @extend selectors within the same directive.
     display: flex;
     list-style-type: none;
     background-color: thistle;
+  }
+  footer p {
+    text-align: center;
+    margin-bottom: 0.7rem;
   }
   footer address {
     display: none;
