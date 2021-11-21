@@ -39,7 +39,8 @@ header {
         #YudoLogo {
             // 寬度 % or vw（螢幕可視範圍高度的百分比）
             // width: $W10 * 8 + 5%;
-            // @include LBW(8, 5%);
+            // 單位不同無法計算，所以改為同一單位 vw
+            @include LBW(8, 5vw);
             float: left;
             background-color: brown;
         }
@@ -53,7 +54,8 @@ header {
         }
         // 靠左排列（與 Logo 同一行）
         #MenuBtn {
-            // width: $W10 * 1 + 5%;
+            // 單位不同無法計算，所以改為同一單位 vw
+            width: $W10 * 1 + 5vw;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
         }
