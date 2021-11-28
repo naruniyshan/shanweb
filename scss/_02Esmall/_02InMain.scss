@@ -9,17 +9,27 @@
         // 定位點：相對定位
         position: relative;
         .Btn {
+            width: 30px;
+            height: 6vh * 2;
+            // 水平置中
+            text-align: center;
+            // 垂直置中 高度 = 行距
+            line-height: 6vh * 2;
             font-size: $Trem * 2;
             // 定位點
             position: absolute;
             // 移動階層（圖層）
-            z-index: 5;
+            z-index: 15;
+            top: 20vh - 6vh;
         }
         .LeftBtn {
-            width: 35px;
-            padding: 10px;
-            text-align: center;
+            left: 2.5vw;
             background-color: chocolate;
+        }
+        .RightBtn {
+            // 方向 右邊為0（物件靠右對齊）；float 浮點對齊，配合 上下左右 方向推動
+            right: 2.5vw;
+            background-color: crimson;
         }
 
         #ImgBox {
