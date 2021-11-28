@@ -83,6 +83,7 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   #Main {
+    width: 100vw;
     background-color: burlywood;
   }
   #Main #Banner {
@@ -90,9 +91,16 @@ You may only @extend selectors within the same directive.
     overflow: hidden;
     position: relative;
   }
-  #Main #Banner .LeftBtn,
-  #Main #Banner .RightBtn {
+  #Main #Banner .Btn {
     font-size: 2rem;
+    position: absolute;
+    z-index: 5;
+  }
+  #Main #Banner .LeftBtn {
+    width: 35px;
+    padding: 10px;
+    text-align: center;
+    background-color: chocolate;
   }
   #Main #Banner #ImgBox {
     width: 100vw;
