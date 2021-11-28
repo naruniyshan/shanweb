@@ -5,6 +5,7 @@
         width: $W10 * 10;
         // 溢位設定，將超出的可視範圍給隱藏
         overflow: hidden;
+        // 定位點：相對定位
         position: relative;
         .LeftBtn,
         .RightBtn {
@@ -18,7 +19,8 @@
             li {
                 width: $W10 * 30;
                 float: left;
-                // 定位點 相絕定位
+                // 定位點 絕對定位；1. 單獨呼叫時，原點（0,0）會位於畫面（可視範圍）的左上角
+                // 2. 物件的父框架呼叫 相對定位（position: relative）時，功能設為「重新定位原點至父框架
                 position: absolute;
             }
         }
