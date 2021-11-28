@@ -84,6 +84,7 @@ You may only @extend selectors within the same directive.
   #Main #Banner {
     width: 100vw;
     overflow: hidden;
+    position: relative;
   }
   #Main #Banner .LeftBtn,
   #Main #Banner .RightBtn {
