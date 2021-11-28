@@ -91,14 +91,22 @@ You may only @extend selectors within the same directive.
     display: none;
   }
   #Main #Banner #ImgBox {
-    width: 300vw;
+    width: 100vw;
     list-style-type: none;
     background-color: cadetblue;
   }
   #Main #Banner #ImgBox li {
-    width: 300vw;
+    width: 100vw;
     float: left;
     position: absolute;
+    font-size: 72px;
+    text-align: center;
+  }
+  #Main #Banner #ImgBox .Item01 {
+    background-image: url(../../images/Banner/001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
 }
 

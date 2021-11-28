@@ -13,15 +13,29 @@
         }
 
         #ImgBox {
-            width: $W10 * 30;
+            width: $W10 * 10;
             @include DNli;
             background-color: cadetblue;
             li {
-                width: $W10 * 30;
+                width: $W10 * 10;
                 float: left;
                 // 定位點 絕對定位；1. 單獨呼叫時，原點（0,0）會位於畫面（可視範圍）的左上角
                 // 2. 物件的父框架呼叫 相對定位（position: relative）時，功能設為「重新定位原點至父框架
                 position: absolute;
+                // 移動圖片位置；因為 不手機會有不同的中心位置，無法逐一計算，所以要利用 背景圖片 的方式修改
+                // margin-left: -235px;
+                font-size: 72px;
+                text-align: center;
+            }
+            .Item01 {
+                // 背景圖片
+                background-image: url(../../images/Banner/001.jpg);
+                // 不重覆
+                background-repeat: no-repeat;
+                // 背景圖片 置中對齊
+                background-position: center;
+                // 背景圖片尺寸
+                background-size: 100%;
             }
         }
     }
