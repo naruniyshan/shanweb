@@ -14,6 +14,11 @@ img {
 
 // 變數區
 $W10: 10vw;
+/* 
+文字尺寸 單位 px（固定值） em（百分比，會疊加父框架設定的值） rem（百分比，不會疊加父框架設定的值）
+em 基礎為 1em = 16px ；rem 基礎為 1rem = 16px
+*/
+$Trem: 1rem;
 
 // 繼承區（相同樣式）；將 scss 的繼承功能，寫在共用檔內，因為位置編排有誤，故造成 編譯 時出錯
 /* 
@@ -33,7 +38,6 @@ You may only @extend selectors within the same directive.
     $LogoW: $W10 * $WM + $WA;
     //  MenuBtn寬度 = 父框架的總寬度（100） - Logo寬度（85）
     $MBW: $W10 * 10 - $LogoW;
-
 
     // 連動 計算寬度 Logo 與 MenuBtn
 

@@ -9,7 +9,7 @@
         position: relative;
         .LeftBtn,
         .RightBtn {
-            @include DN;
+            font-size: $Trem * 2;
         }
 
         #ImgBox {
@@ -34,7 +34,7 @@
             .Item01 {
                 width: $W10 * 10;
                 // 背景圖片
-                background-image: url(../../images/Banner/005.jpg);
+                background-image: url(../../images/Banner/001.jpg);
                 // 不重覆
                 background-repeat: no-repeat;
                 // 背景圖片 置中對齊

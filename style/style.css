@@ -10,6 +10,10 @@ img {
 }
 
 /* 
+文字尺寸 單位 px（固定值） em（百分比，會疊加父框架設定的值） rem（百分比，不會疊加父框架設定的值）
+em 基礎為 1em = 16px ；rem 基礎為 1rem = 16px
+*/
+/* 
 You may not @extend an outer selector from within @media.
 You may only @extend selectors within the same directive.
 無法由 @media（媒體判斷）去呼叫「外部連結檔」
@@ -88,7 +92,7 @@ You may only @extend selectors within the same directive.
   }
   #Main #Banner .LeftBtn,
   #Main #Banner .RightBtn {
-    display: none;
+    font-size: 2rem;
   }
   #Main #Banner #ImgBox {
     width: 100vw;
@@ -106,7 +110,7 @@ You may only @extend selectors within the same directive.
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
-    background-image: url(../../images/Banner/005.jpg);
+    background-image: url(../../images/Banner/001.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
