@@ -78,6 +78,23 @@ You may only @extend selectors within the same directive.
   footer address {
     display: none;
   }
+  #Main {
+    background-color: burlywood;
+  }
+  #Main #Banner .LeftBtn,
+  #Main #Banner .RightBtn {
+    display: none;
+  }
+  #Main #Banner #ImgBox {
+    width: 100vw;
+    list-style-type: none;
+    background-color: cadetblue;
+  }
+  #Main #Banner #ImgBox li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -119,6 +136,27 @@ You may only @extend selectors within the same directive.
   }
   header nav .Clear {
     clear: both;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+  footer hr {
+    margin-bottom: 2rem;
+  }
+  footer nav {
+    margin-bottom: 2rem;
+  }
+  footer nav ul {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    background-color: #7b8f9b;
+  }
+  footer p {
+    text-align: center;
+    margin-bottom: 0.7rem;
   }
   footer address {
     display: none;

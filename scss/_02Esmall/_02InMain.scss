@@ -1,0 +1,22 @@
+#Main {
+    background-color: burlywood;
+
+    #Banner {
+        .LeftBtn,
+        .RightBtn {
+            @include DN;
+        }
+
+        #ImgBox {
+            width: $W10 * 10;
+            @include DNli;
+            background-color: cadetblue;
+            li {
+                width: $W10 * 10;
+                float: left;
+                // 定位點 相絕定位
+                position: absolute;
+            }
+        }
+    }
+}
