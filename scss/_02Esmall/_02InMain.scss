@@ -2,17 +2,20 @@
     background-color: burlywood;
 
     #Banner {
+        width: $W10 * 10;
+        // 溢位設定，將超出的可視範圍給隱藏
+        overflow: hidden;
         .LeftBtn,
         .RightBtn {
             @include DN;
         }
 
         #ImgBox {
-            width: $W10 * 10;
+            width: $W10 * 30;
             @include DNli;
             background-color: cadetblue;
             li {
-                width: $W10 * 10;
+                width: $W10 * 30;
                 float: left;
                 // 定位點 相絕定位
                 position: absolute;
