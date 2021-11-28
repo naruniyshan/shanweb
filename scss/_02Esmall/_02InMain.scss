@@ -8,6 +8,7 @@
         }
 
         #ImgBox {
+            width: $W10 * 10;
             @include DNli;
             background-color: cadetblue;
             li {
