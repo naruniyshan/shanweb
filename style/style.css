@@ -56,8 +56,8 @@ You may only @extend selectors within the same directive.
     float: left;
   }
   header nav #MenuBtn img {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
   }
   header nav .Clear {
     clear: both;
