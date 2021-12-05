@@ -10,17 +10,18 @@
         position: relative;
         .Btn {
             width: 20px;
-            height: 6vh * 2;
+            height: 95px;
             // 水平置中
             text-align: center;
             // 垂直置中 高度 = 行距
-            line-height: 6vh * 2;
+            line-height: 95px;
             font-size: $Trem * 1.2;
             // 定位點
             position: absolute;
             // 移動階層（圖層）
             z-index: 15;
-            top: 20vh - 6vh;
+            // 左右按鈕，物件往下推算高度；(物件的父框架的高 / 2) - (按鈕高度 / 2) + 單位
+            top: (335 / 2) - (95 / 2) + px;
             @include Rounded(15);
         }
         .LeftBtn {
@@ -37,7 +38,7 @@
             width: $W10 * 10;
             @include DNli;
             // 內間距 設定 下方間距，當成圖片的高度，單位為 % or vh
-            padding-bottom: 350px;
+            padding-bottom: 335px;
             background-color: cadetblue;
             li {
                 width: $W10 * 10;
