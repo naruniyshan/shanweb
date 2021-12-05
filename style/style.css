@@ -34,13 +34,14 @@ You may only @extend selectors within the same directive.
         3. 利用圖片高度撐開父框架的高
         */
     width: 100vw;
+    height: 60px;
     background-color: wheat;
   }
   header nav #YudoLogo {
-    width: 85vw;
+    width: 84vw;
   }
   header nav #MenuBtn {
-    width: 15vw;
+    width: 16vw;
   }
   header nav #YudoLogo {
     float: left;
@@ -54,10 +55,13 @@ You may only @extend selectors within the same directive.
   }
   header nav #MenuBtn {
     float: left;
-  }
-  header nav #MenuBtn img {
-    width: 55px;
-    height: 55px;
+    background-color: aquamarine;
+    text-indent: -9999px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../images/icon/menu.svg);
   }
   header nav .Clear {
     clear: both;
