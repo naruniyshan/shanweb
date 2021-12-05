@@ -31,14 +31,13 @@ header {
         3. 利用圖片高度撐開父框架的高
         */
         width: $W10 * 10;
-        height: 60px;
         // 設定高度 單位為 %（未給予基準值，所以無法計算出實際高度）
         background-color: wheat;
         // 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
 
         // 單位不同無法計算，所以改為同一單位 vw
         // 引入的程式，執行結果為 YudoLogo 與 MenuBtn 的寬度，所以要寫在父框架（nav）
-        @include LBW(8, 4vw);
+        @include LBW(8, 5vw);
 
         // 靠左排列（與 MenuBtn 同一行）
         #YudoLogo {
@@ -58,12 +57,13 @@ header {
         }
         // 靠左排列（與 Logo 同一行）
         #MenuBtn {
+            height: 60px;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
             background-color: aquamarine;
             // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
             text-indent: -9999px;
-            @include BPhoto(center, contain, icon, "menu.svg");
+            @include PhoneMenu(center, contain, icon, "menu.svg");
         }
         .Clear {
             @include ClearFloat;
