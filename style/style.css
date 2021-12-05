@@ -125,10 +125,17 @@ You may only @extend selectors within the same directive.
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
-    background-image: url(../../images/Banner/001.jpg);
+    background-image: url(../../images/Banner/005.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/Banner/004.jpg);
   }
 }
 
