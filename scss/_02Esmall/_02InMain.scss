@@ -52,15 +52,7 @@
                 padding-bottom: 26vh;
             }
             .Item01 {
-                width: $W10 * 10;
-                // 背景圖片
-                background-image: url(../../images/Banner/005.jpg);
-                // 不重覆
-                background-repeat: no-repeat;
-                // 背景圖片 置中對齊
-                background-position: center;
-                // 背景圖片尺寸
-                background-size: cover;
+                @include BPhoto(center, cover, Banner, "005.jpg");
             }
             .Item02 {
                 // 英文字在數字前，數字被判定為「文字」；數字在英文字或底線（ _ ）前，數字被為數字，「0」為開頭，scss會自動刪除
