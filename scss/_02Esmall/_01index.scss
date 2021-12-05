@@ -43,7 +43,7 @@ header {
         #YudoLogo {
             // 寬度 % or vw（螢幕可視範圍高度的百分比）
             // width: $W10 * 8 + 5%;
-            
+
             float: left;
             background-color: brown;
         }
@@ -59,6 +59,11 @@ header {
         #MenuBtn {
             // 浮點對齊法：靠左對齊 float:left
             float: left;
+            // 固定圖片的高度，讓 頁首的高度 不隨著裝置高度而變動
+            img {
+                width: 50px;
+                height: 50px;
+            }
         }
         .Clear {
             @include ClearFloat;
