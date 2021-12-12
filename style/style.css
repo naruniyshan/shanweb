@@ -197,6 +197,7 @@ You may only @extend selectors within the same directive.
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
+    padding-top: 0.6rem;
     background-color: darkkhaki;
   }
   #Main > #Limited > .LCommodity > #TitleBox > .Text {

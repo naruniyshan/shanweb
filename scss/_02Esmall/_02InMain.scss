@@ -99,7 +99,6 @@
             margin: {
                 bottom: 20px;
             }
-
             // 背景顏色
             background-color: rgb(255, 255, 255);
             
@@ -123,14 +122,21 @@
                 // 計算式
                 $TW : $W1P * 7;
                 $NW : $W1P * 10 - $TW;
+
+                $TFS: $Trem * 1.7;
+                $NFS: $Trem * 1.1;
                 > .Title {
                     width: $TW;
-                    font-size: $Trem * 1.7;
+                    font-size: $TFS;
                 }
                 > .Number {
                     width: $NW;
-                    font-size: $Trem * 1.1;
+                    font-size: $NFS;
                     text-align: right;
+                    // 計算 Title 與 Number 內間距的差
+                    padding: {
+                        top: $TFS - $NFS;
+                    }
                     background-color: darkkhaki;
                 }
                 > .Text {
@@ -138,7 +144,8 @@
                     text-align: right;
                 }
             }
-    
+
+
             > .Images {
                 background-color: yellowgreen;
             }
