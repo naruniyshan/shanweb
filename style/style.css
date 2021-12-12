@@ -174,7 +174,20 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Limited > .LCommodity {
     width: 80vw;
-    background-color: white;
+    margin-bottom: 20px;
+    background-color: #773131;
+  }
+  #Main > #Limited > .LCommodity > .Images {
+    background-color: yellowgreen;
+  }
+  #Main > #Limited > .LCommodity > .LNameBox {
+    background-color: yellow;
+  }
+  #Main > #Limited > .LCommodity > .LNameBox > ul > li {
+    list-style-type: none;
+  }
+  #Main > #Limited > .LCommodity > .Brief {
+    background-color: rosybrown;
   }
 }
 

@@ -95,8 +95,29 @@
         > .LCommodity {
             // 寬度
             width: $W10 * 8;
+            // 外間距
+            margin: {
+                bottom: 20px;
+            }
             // 背景顏色
-            background-color: white;
+            background-color: rgb(119, 49, 49);
+            > .Images {
+                background-color: yellowgreen;
+            }
+
+            > .LNameBox {
+                background-color: yellow;
+                > ul {
+                    > li {
+                        // 隱藏項目符號
+                        list-style-type: none;
+                    }
+                }
+            }
+
+            > .Brief {
+                background-color: rosybrown;
+            }
         }
     }
 }
