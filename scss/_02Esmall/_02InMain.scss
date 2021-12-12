@@ -99,6 +99,9 @@
             margin: {
                 bottom: 20px;
             }
+            // 重新定位原點 父框架設定 定位點：相對值 ；子框架設定 定位點：絕對值
+            position: relative;
+
             // 背景顏色
             background-color: rgb(255, 255, 255);
             
@@ -111,23 +114,40 @@
                 flex-wrap: wrap;
                 // 隱藏項目符號
                 list-style-type: none;
+                // 字距
+                letter-spacing: 2px;
+                // 與外框的距離
+                margin: {
+                    top: 15px;
+                    bottom: 15px;
+                }
+                // 定位點 絕對
+                position: absolute;
                 background-color: salmon;
+
+                .Clear {
+                    clear: both;
+                }
 
                 // 計算式
                 $TW : $W1P * 7;
                 $NW : $W1P * 10 - $TW;
                 > .Title {
                     width: $TW;
+                    font-size: $Trem * 1.7;
                 }
                 > .Number {
                     width: $NW;
+                    font-size: $Trem * 1.1;
+                    text-align: right;
+                    background-color: darkkhaki;
                 }
                 > .Text {
                     width: $W1P * 10;
+                    text-align: right;
                 }
             }
-
-
+    
             > .Images {
                 background-color: yellowgreen;
             }

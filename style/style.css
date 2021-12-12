@@ -175,6 +175,7 @@ You may only @extend selectors within the same directive.
   #Main > #Limited > .LCommodity {
     width: 80vw;
     margin-bottom: 20px;
+    position: relative;
     background-color: white;
   }
   #Main > #Limited > .LCommodity > #TitleBox {
@@ -185,16 +186,28 @@ You may only @extend selectors within the same directive.
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style-type: none;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: absolute;
     background-color: salmon;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox .Clear {
+    clear: both;
   }
   #Main > #Limited > .LCommodity > #TitleBox > .Title {
     width: 70%;
+    font-size: 1.7rem;
   }
   #Main > #Limited > .LCommodity > #TitleBox > .Number {
     width: 30%;
+    font-size: 1.1rem;
+    text-align: right;
+    background-color: darkkhaki;
   }
   #Main > #Limited > .LCommodity > #TitleBox > .Text {
     width: 100%;
+    text-align: right;
   }
   #Main > #Limited > .LCommodity > .Images {
     background-color: yellowgreen;
