@@ -175,7 +175,26 @@ You may only @extend selectors within the same directive.
   #Main > #Limited > .LCommodity {
     width: 80vw;
     margin-bottom: 20px;
-    background-color: #773131;
+    background-color: white;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style-type: none;
+    background-color: salmon;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox > .Title {
+    width: 70%;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox > .Number {
+    width: 30%;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox > .Text {
+    width: 100%;
   }
   #Main > #Limited > .LCommodity > .Images {
     background-color: yellowgreen;
