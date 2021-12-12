@@ -1,6 +1,7 @@
 // 呼叫 html 標籤，例如： nav，稱作 類型選擇
 // 呼叫 id ，例如 <li id="test"></li>，id="test"，「#」ID選擇器；「#test」
 // 呼叫 class，class="test1"，「.」類別選擇器；「.test1」
+// 後代選擇器，例如 header nav li，nav框架中若存在 li標籤，不論是哪一個層級，都會直接受影響
 // scss 1.巢狀寫法 2.變數 $yourname（設定計算用的基礎值） 3.繼承 %yourname（css3語法相同，但能集中呈現）；呼叫方式 @extend %yourname
 
 // 傳統 css3 的寫法 隱藏

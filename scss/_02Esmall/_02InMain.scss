@@ -1,3 +1,4 @@
+// 子元素選擇器（有指向性）；例如 header > nav > #YudoIcon > li
 #Main {
     width: $W10 * 10;
     background-color: burlywood;
@@ -74,6 +75,20 @@
             }
             .Item05 {
                 @include BPhoto(center, cover, Banner, "001.jpg");
+            }
+        }
+    }
+
+    > #Limited {
+        > h1 {
+            // 文字尺寸
+            font-size: $Trem * 2 + $Trem * 0.3;
+            // 標題置中
+            text-align: center;
+            // 內間距
+            padding: {
+                top: 15px;
+                bottom: 15px;
             }
         }
     }
