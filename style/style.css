@@ -228,6 +228,27 @@ You may only @extend selectors within the same directive.
   #Main > #Limited > .LCommodity > .Brief {
     width: 85%;
     text-align: justify;
+    margin-bottom: 10px;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox {
+    width: 90%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .OriginalPrice {
+    width: 40%;
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .BargainPrice {
+    width: 40%;
+    font-size: 1.2rem;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .Car {
+    width: 20%;
   }
 }
 
