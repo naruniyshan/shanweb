@@ -169,8 +169,6 @@
                 margin: {
                     bottom: 15px;
                 }
-                background-color: yellow;
-
                 > h3 {
                     width: $TW + 10;
                     // 文字尺寸
@@ -184,7 +182,10 @@
             }
 
             > .Brief {
-                background-color: rosybrown;
+                // 寬度
+                width: $W1P * 8.5;
+                // 文字對齊 左右切齊
+                text-align: justify;
             }
         }
     }
