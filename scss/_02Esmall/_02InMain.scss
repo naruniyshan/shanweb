@@ -91,5 +91,12 @@
                 bottom: 15px;
             }
         }
+
+        > .LCommodity {
+            // 寬度
+            width: $W10 * 8;
+            // 背景顏色
+            background-color: white;
+        }
     }
 }
