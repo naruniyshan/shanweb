@@ -187,7 +187,7 @@ You may only @extend selectors within the same directive.
     list-style-type: none;
     letter-spacing: 2px;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   #Main > #Limited > .LCommodity > #TitleBox > .Title {
     width: 70%;
@@ -198,19 +198,32 @@ You may only @extend selectors within the same directive.
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
-    background-color: darkkhaki;
   }
   #Main > #Limited > .LCommodity > #TitleBox > .Text {
     width: 100%;
     text-align: right;
   }
   #Main > #Limited > .LCommodity > .Images {
+    width: 280px;
+    height: 230px;
+    margin-bottom: 10px;
+    border-radius: 15px;
     background-color: yellowgreen;
   }
   #Main > #Limited > .LCommodity > .LNameBox {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
     background-color: yellow;
   }
-  #Main > #Limited > .LCommodity > .LNameBox > ul > li {
+  #Main > #Limited > .LCommodity > .LNameBox > h3 {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  #Main > #Limited > .LCommodity > .LNameBox > li {
+    width: 20%;
     list-style-type: none;
   }
   #Main > #Limited > .LCommodity > .Brief {

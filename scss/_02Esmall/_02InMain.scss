@@ -80,6 +80,12 @@
     }
 
     > #Limited {
+        // 計算式
+        $TW : $W1P * 7;
+        $NW : $W1P * 10 - $TW;
+
+        $TFS: $Trem * 1.7;
+        $NFS: $Trem * 1.1;
         > h1 {
             // 文字尺寸
             font-size: $Trem * 2 + $Trem * 0.3;
@@ -116,15 +122,10 @@
                 // 與外框的距離，設定為內間距
                 padding: {
                     top: 15px;
-                    bottom: 15px;
+                    bottom: 10px;
                 }
 
-                // 計算式
-                $TW : $W1P * 7;
-                $NW : $W1P * 10 - $TW;
-
-                $TFS: $Trem * 1.7;
-                $NFS: $Trem * 1.1;
+                
                 > .Title {
                     width: $TW;
                     font-size: $TFS;
@@ -137,7 +138,6 @@
                     padding: {
                         top: $TFS - $NFS;
                     }
-                    background-color: darkkhaki;
                 }
                 > .Text {
                     width: $W1P * 10;
@@ -147,16 +147,39 @@
 
 
             > .Images {
+                // 寬度
+                width: 280px;
+                // 高度 設定絕對高，不會隨著裝置高度變動
+                height: 230px;
+                // 外間距
+                margin: {
+                    bottom: 10px;
+                }
+                // 圓角矩形 邊框設定轉角的角度
+                border-radius: 15px;
+
                 background-color: yellowgreen;
             }
 
             > .LNameBox {
+                width: $W1P * 9;
+                // 彈性佈局 橫向排版
+                display: flex;
+                // 外間距
+                margin: {
+                    bottom: 15px;
+                }
                 background-color: yellow;
-                > ul {
-                    > li {
-                        // 隱藏項目符號
-                        list-style-type: none;
-                    }
+
+                > h3 {
+                    width: $TW + 10;
+                    // 文字尺寸
+                    font-size: $Trem * 1.4;
+                }
+                > li {
+                    width: $NW - 10;
+                    // 隱藏項目符號
+                    list-style-type: none;
                 }
             }
 
