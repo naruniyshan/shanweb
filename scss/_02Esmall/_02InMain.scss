@@ -86,6 +86,7 @@
 
         $TFS: $Trem * 1.7;
         $NFS: $Trem * 1.1;
+        background-image: url(../../images/BG/001.gif);
         > h1 {
             // 文字尺寸
             font-size: $Trem * 2 + $Trem * 0.3;
@@ -98,7 +99,7 @@
             }
         }
 
-        > .LCommodity {
+        > .Commodity {
             // 寬度
             width: $W10 * 8;
             // 外間距
@@ -167,7 +168,7 @@
                 }
             }
 
-            > .LNameBox {
+            > .LName {
                 width: $W1P * 9;
                 // 彈性佈局 橫向排版
                 display: flex;
@@ -269,8 +270,8 @@
             // 字距
             letter-spacing: 2px;
 
-            // 外間距
-            margin: {
+            // 內間距
+            padding: {
                 bottom: 15px;
             }
 
@@ -297,6 +298,7 @@
 
         $TFS: $Trem * 1.7;
         $NFS: $Trem * 1.1;
+        background-image: url(../../images/BG/002.gif);
         > h1 {
             // 文字尺寸
             font-size: $Trem * 2 + $Trem * 0.3;
@@ -309,7 +311,7 @@
             }
         }
 
-        > .SCommodity {
+        > .Commodity {
             // 寬度
             width: $W10 * 8;
             // 外間距
@@ -391,8 +393,8 @@
             // 字距
             letter-spacing: 2px;
 
-            // 外間距
-            margin: {
+            // 內間距
+            padding: {
                 bottom: 15px;
             }
 

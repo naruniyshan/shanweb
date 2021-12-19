@@ -73,12 +73,18 @@ header {
 
     > div {
         > #Icon {
-            width: $W1P * 10;
+            // width: $W1P * 10;
             padding: {
                 bottom: 10px;
             }
             @include DNli;
             display: flex;
+            // justify-content: flex-end;
+            background-color: yellowgreen;
+            > li {
+                // width: 5%;
+                background-color: red;
+            }
         }
         > h1 {
             width: $W1P * 10;
@@ -97,7 +103,7 @@ header {
 
 footer {
     // 物件之的間距值 vh rem
-    margin-top: 2rem;
+    // margin-top: 2rem;
 
     hr {
         margin-bottom: 2rem;
@@ -112,7 +118,6 @@ footer {
             // 彈性佈局
             display: flex;
             @include DNli;
-            background-color: thistle;
         }
     }
 
