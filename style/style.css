@@ -66,14 +66,22 @@ You may only @extend selectors within the same directive.
     clear: both;
   }
   header > div > #Icon {
-    padding-bottom: 10px;
+    width: 100%;
     list-style-type: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: yellowgreen;
   }
   header > div > #Icon > li {
+    width: 50px;
+    height: 50px;
     background-color: red;
   }
   header > div > h1 {
@@ -194,7 +202,7 @@ You may only @extend selectors within the same directive.
     padding-bottom: 15px;
   }
   #Main > #Limited > .Commodity {
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
@@ -227,7 +235,7 @@ You may only @extend selectors within the same directive.
     text-align: right;
   }
   #Main > #Limited > .Commodity > .Images {
-    width: 280px;
+    width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
@@ -291,7 +299,7 @@ You may only @extend selectors within the same directive.
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 15px;
@@ -314,7 +322,7 @@ You may only @extend selectors within the same directive.
     padding-bottom: 15px;
   }
   #Main > #Share > .Commodity {
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
@@ -324,7 +332,7 @@ You may only @extend selectors within the same directive.
     height: 30px;
   }
   #Main > #Share > .Commodity > .Images {
-    width: 280px;
+    width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
@@ -356,7 +364,7 @@ You may only @extend selectors within the same directive.
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 15px;
