@@ -249,7 +249,7 @@ You may only @extend selectors within the same directive.
   #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice {
     width: 35%;
     font-size: 0.9rem;
-    padding-top: 0.3rem;
+    padding-top: 0.5rem;
   }
   #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice > span {
     padding-left: 5px;
