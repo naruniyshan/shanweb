@@ -21,81 +21,94 @@ header {
     // 寬度 100%;
     width: $W10 * 10;
     background-color: violet;
-    nav {
-        /* 
-        浮動對齊的問題 float
-        1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度
-        2. nav 的父框架 header ，高度消失（展開）
-        解決方式
-        1. nav 的父框架 header，給予高度；或是 nav 給予高度
-        2. 清除浮動狀態，由 nav 設定
-        3. 利用圖片高度撐開父框架的高
-        */
-        width: $W10 * 10;
-        // 設定高度 單位為 %（未給予基準值，所以無法計算出實際高度）
-        background-color: wheat;
-        // 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
+    // nav {
+    //     /*
+    //     浮動對齊的問題 float
+    //     1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度
+    //     2. nav 的父框架 header ，高度消失（展開）
+    //     解決方式
+    //     1. nav 的父框架 header，給予高度；或是 nav 給予高度
+    //     2. 清除浮動狀態，由 nav 設定
+    //     3. 利用圖片高度撐開父框架的高
+    //     */
+    //     width: $W10 * 10;
+    //     // 設定高度 單位為 %（未給予基準值，所以無法計算出實際高度）
+    //     background-color: wheat;
+    //     // 解決方式二：清除浮動狀態，由 nav 設定 寫在 53行
 
-        // 單位不同無法計算，所以改為同一單位 vw
-        // 引入的程式，執行結果為 YudoLogo 與 MenuBtn 的寬度，所以要寫在父框架（nav）
-        @include LBW(8, 5vw);
+    //     // 單位不同無法計算，所以改為同一單位 vw
+    //     // 引入的程式，執行結果為 YudoLogo 與 MenuBtn 的寬度，所以要寫在父框架（nav）
+    //     @include LBW(8, 5vw);
 
-        // 靠左排列（與 MenuBtn 同一行）
-        #YudoLogo {
-            // 寬度 % or vw（螢幕可視範圍高度的百分比）
-            // width: $W10 * 8 + 5%;
+    //     // 靠左排列（與 MenuBtn 同一行）
+    //     #YudoLogo {
+    //         // 寬度 % or vw（螢幕可視範圍高度的百分比）
+    //         // width: $W10 * 8 + 5%;
 
-            float: left;
-            background-color: brown;
-        }
-        #YudoIcon {
-            // 呼叫 混合函式
-            @include DN;
-        }
-        .YudoBtnBox {
-            // 呼叫 混合函式
-            @include DN;
-        }
-        // 靠左排列（與 Logo 同一行）
-        #MenuBtn {
-            height: 60px;
-            // 浮點對齊法：靠左對齊 float:left
-            float: left;
-            background-color: aquamarine;
-            // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
-            text-indent: -9999px;
-            @include PhoneMenu(center, contain, icon, "menu.svg");
-        }
-        .Clear {
-            @include ClearFloat;
-        }
-    }
+    //         float: left;
+    //         background-color: brown;
+    //     }
+    //     #YudoIcon {
+    //         // 呼叫 混合函式
+    //         @include DN;
+    //     }
+    //     .YudoBtnBox {
+    //         // 呼叫 混合函式
+    //         @include DN;
+    //     }
+    //     // 靠左排列（與 Logo 同一行）
+    //     #MenuBtn {
+    //         height: 60px;
+    //         // 浮點對齊法：靠左對齊 float:left
+    //         float: left;
+    //         background-color: aquamarine;
+    //         // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
+    //         text-indent: -9999px;
+    //         @include PhoneMenu(center, contain, icon, "menu.svg");
+    //     }
+    //     .Clear {
+    //         @include ClearFloat;
+    //     }
+    // }
 
-    > div {
+    > nav {
         > #Icon {
             width: $W1P * 10;
             @include DNli;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            background-color: yellowgreen;
             > .item {
                 width: 50px;
                 height: 50px;
-                margin: 0;
+                margin: {
+                    left: 5px;
+                    right: 5px;
+                }
                 background-color: red;
             }
         }
         > h1 {
             width: $W1P * 10;
+            height: 80px;
             text-align: center;
         }
         > #Navber {
             width: $W1P * 10;
+            height: 60px;
             @include DNli;
             display: flex;
-            padding: {
-                bottom: 30px;
+            > .Line {
+                width: 5px;
+                font-size: $Trem * 1.5;
+                text-align: center;
+                line-height: 60px;
+            }
+
+            > .MenuBtn {
+                width: 60px;
+                text-indent: -9999px;
+                @include PhoneMenu(center, contain, icon, "menu.svg");
             }
         }
     }

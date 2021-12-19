@@ -23,49 +23,7 @@ You may only @extend selectors within the same directive.
     width: 100vw;
     background-color: violet;
   }
-  header nav {
-    /* 
-        浮動對齊的問題 float
-        1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度
-        2. nav 的父框架 header ，高度消失（展開）
-        解決方式
-        1. nav 的父框架 header，給予高度；或是 nav 給予高度
-        2. 清除浮動狀態，由 nav 設定
-        3. 利用圖片高度撐開父框架的高
-        */
-    width: 100vw;
-    background-color: wheat;
-  }
-  header nav #YudoLogo {
-    width: 85vw;
-  }
-  header nav #MenuBtn {
-    width: 15vw;
-  }
-  header nav #YudoLogo {
-    float: left;
-    background-color: brown;
-  }
-  header nav #YudoIcon {
-    display: none;
-  }
-  header nav .YudoBtnBox {
-    display: none;
-  }
-  header nav #MenuBtn {
-    height: 60px;
-    float: left;
-    background-color: aquamarine;
-    text-indent: -9999px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url(../../images/icon/menu.svg);
-  }
-  header nav .Clear {
-    clear: both;
-  }
-  header > div > #Icon {
+  header > nav > #Icon {
     width: 100%;
     list-style-type: none;
     display: -webkit-box;
@@ -78,25 +36,40 @@ You may only @extend selectors within the same directive.
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    background-color: yellowgreen;
   }
-  header > div > #Icon > .item {
+  header > nav > #Icon > .item {
     width: 50px;
     height: 50px;
-    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: red;
   }
-  header > div > h1 {
+  header > nav > h1 {
     width: 100%;
+    height: 80px;
     text-align: center;
   }
-  header > div > #Navber {
+  header > nav > #Navber {
     width: 100%;
+    height: 60px;
     list-style-type: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 30px;
+  }
+  header > nav > #Navber > .Line {
+    width: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 60px;
+  }
+  header > nav > #Navber > .MenuBtn {
+    width: 60px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../images/icon/menu.svg);
   }
   footer hr {
     margin-bottom: 2rem;
@@ -203,14 +176,14 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Limited > .Commodity {
+  #Main > #Limited > article > .Commodity {
     width: 90%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Limited > .Commodity > #TitleBox {
+  #Main > #Limited > article > .Commodity > #TitleBox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -222,50 +195,50 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Title {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Number {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Text {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Text {
     width: 100%;
     text-align: right;
   }
-  #Main > #Limited > .Commodity > .Images {
+  #Main > #Limited > article > .Commodity > .Images {
     width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .Images > a > img {
+  #Main > #Limited > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .LName {
+  #Main > #Limited > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Limited > .Commodity > .LName > h3 {
+  #Main > #Limited > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Limited > .Commodity > .LName > li {
+  #Main > #Limited > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Limited > .Commodity > .Brief {
+  #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox {
+  #Main > #Limited > article > .Commodity > #PriceBox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -273,28 +246,28 @@ You may only @extend selectors within the same directive.
     display: flex;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice {
     width: 45%;
     font-size: 1.2rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice > span {
     font-size: 1.7rem;
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .Car {
+  #Main > #Limited > article > .Commodity > #PriceBox > .Car {
     width: 20%;
   }
   #Main > #Limited > .more {
@@ -323,41 +296,41 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Share > .Commodity {
+  #Main > #Share > article > .Commodity {
     width: 90%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Share > .Commodity > .Null {
+  #Main > #Share > article > .Commodity > .Null {
     height: 30px;
   }
-  #Main > #Share > .Commodity > .Images {
+  #Main > #Share > article > .Commodity > .Images {
     width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .Images > a > img {
+  #Main > #Share > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .LName {
+  #Main > #Share > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Share > .Commodity > .LName > h3 {
+  #Main > #Share > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Share > .Commodity > .LName > li {
+  #Main > #Share > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Share > .Commodity > .Brief {
+  #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     padding-bottom: 20px;
@@ -537,14 +510,14 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Limited > .Commodity {
+  #Main > #Limited > article > .Commodity {
     width: 45%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Limited > .Commodity > #TitleBox {
+  #Main > #Limited > article > .Commodity > #TitleBox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -556,50 +529,50 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Title {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Number {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Text {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Text {
     width: 100%;
     text-align: right;
   }
-  #Main > #Limited > .Commodity > .Images {
+  #Main > #Limited > article > .Commodity > .Images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .Images > a > img {
+  #Main > #Limited > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .LName {
+  #Main > #Limited > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Limited > .Commodity > .LName > h3 {
+  #Main > #Limited > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Limited > .Commodity > .LName > li {
+  #Main > #Limited > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Limited > .Commodity > .Brief {
+  #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox {
+  #Main > #Limited > article > .Commodity > #PriceBox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -607,28 +580,28 @@ You may only @extend selectors within the same directive.
     display: flex;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice {
     width: 45%;
     font-size: 1.2rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice > span {
     font-size: 1.7rem;
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .Car {
+  #Main > #Limited > article > .Commodity > #PriceBox > .Car {
     width: 20%;
   }
   #Main > #Limited > .more {
@@ -663,41 +636,41 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Share > .Commodity {
+  #Main > #Share > article > .Commodity {
     width: 45%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Share > .Commodity > .Null {
+  #Main > #Share > article > .Commodity > .Null {
     height: 30px;
   }
-  #Main > #Share > .Commodity > .Images {
+  #Main > #Share > article > .Commodity > .Images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .Images > a > img {
+  #Main > #Share > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .LName {
+  #Main > #Share > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Share > .Commodity > .LName > h3 {
+  #Main > #Share > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Share > .Commodity > .LName > li {
+  #Main > #Share > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Share > .Commodity > .Brief {
+  #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     padding-bottom: 20px;
@@ -883,11 +856,6 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Limited {
     background-image: url(../../images/BG/001.gif);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   #Main > #Limited > h1 {
     width: 100%;
@@ -896,14 +864,22 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Limited > .Commodity {
+  #Main > #Limited > article {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Main > #Limited > article > .Commodity {
     width: 30.33333%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Limited > .Commodity > #TitleBox {
+  #Main > #Limited > article > .Commodity > #TitleBox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -915,50 +891,50 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Title {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Number {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Text {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Text {
     width: 100%;
     text-align: right;
   }
-  #Main > #Limited > .Commodity > .Images {
-    width: 280px;
+  #Main > #Limited > article > .Commodity > .Images {
+    width: 90%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .Images > a > img {
+  #Main > #Limited > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .LName {
+  #Main > #Limited > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Limited > .Commodity > .LName > h3 {
+  #Main > #Limited > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Limited > .Commodity > .LName > li {
+  #Main > #Limited > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Limited > .Commodity > .Brief {
+  #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox {
+  #Main > #Limited > article > .Commodity > #PriceBox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -966,28 +942,28 @@ You may only @extend selectors within the same directive.
     display: flex;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice {
     width: 45%;
     font-size: 1.2rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice > span {
     font-size: 1.7rem;
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .Car {
+  #Main > #Limited > article > .Commodity > #PriceBox > .Car {
     width: 20%;
   }
   #Main > #Limited > .more {
@@ -1009,11 +985,6 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Share {
     background-image: url(../../images/BG/002.gif);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   #Main > #Share > h1 {
     width: 100%;
@@ -1022,41 +993,49 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Share > .Commodity {
+  #Main > #Share > article {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Main > #Share > article > .Commodity {
     width: 30.33333%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Share > .Commodity > .Null {
+  #Main > #Share > article > .Commodity > .Null {
     height: 30px;
   }
-  #Main > #Share > .Commodity > .Images {
+  #Main > #Share > article > .Commodity > .Images {
     width: 85%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .Images > a > img {
+  #Main > #Share > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .LName {
+  #Main > #Share > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Share > .Commodity > .LName > h3 {
+  #Main > #Share > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Share > .Commodity > .LName > li {
+  #Main > #Share > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Share > .Commodity > .Brief {
+  #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     padding-bottom: 20px;
@@ -1167,11 +1146,6 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Limited {
     background-image: url(../../images/BG/001.gif);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   #Main > #Limited > h1 {
     width: 100%;
@@ -1180,14 +1154,22 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Limited > .Commodity {
+  #Main > #Limited > article {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Main > #Limited > article > .Commodity {
     width: 24%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Limited > .Commodity > #TitleBox {
+  #Main > #Limited > article > .Commodity > #TitleBox {
     width: 85%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1199,50 +1181,50 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Title {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Number {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #Main > #Limited > .Commodity > #TitleBox > .Text {
+  #Main > #Limited > article > .Commodity > #TitleBox > .Text {
     width: 100%;
     text-align: right;
   }
-  #Main > #Limited > .Commodity > .Images {
-    width: 280px;
+  #Main > #Limited > article > .Commodity > .Images {
+    width: 90%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .Images > a > img {
+  #Main > #Limited > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Limited > .Commodity > .LName {
+  #Main > #Limited > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Limited > .Commodity > .LName > h3 {
+  #Main > #Limited > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Limited > .Commodity > .LName > li {
+  #Main > #Limited > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Limited > .Commodity > .Brief {
+  #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     margin-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox {
+  #Main > #Limited > article > .Commodity > #PriceBox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -1250,28 +1232,28 @@ You may only @extend selectors within the same directive.
     display: flex;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .OriginalPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: blue;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice {
     width: 45%;
     font-size: 1.2rem;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice > span {
+  #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice > span {
     font-size: 1.7rem;
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #Main > #Limited > .Commodity > #PriceBox > .Car {
+  #Main > #Limited > article > .Commodity > #PriceBox > .Car {
     width: 20%;
   }
   #Main > #Limited > .more {
@@ -1293,11 +1275,6 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Share {
     background-image: url(../../images/BG/002.gif);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   #Main > #Share > h1 {
     width: 100%;
@@ -1306,41 +1283,49 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Share > .Commodity {
+  #Main > #Share > article {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Main > #Share > article > .Commodity {
     width: 24%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Share > .Commodity > .Null {
+  #Main > #Share > article > .Commodity > .Null {
     height: 30px;
   }
-  #Main > #Share > .Commodity > .Images {
-    width: 85%;
+  #Main > #Share > article > .Commodity > .Images {
+    width: 90%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .Images > a > img {
+  #Main > #Share > article > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Share > .Commodity > .LName {
+  #Main > #Share > article > .Commodity > .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
   }
-  #Main > #Share > .Commodity > .LName > h3 {
+  #Main > #Share > article > .Commodity > .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Share > .Commodity > .LName > li {
+  #Main > #Share > article > .Commodity > .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Share > .Commodity > .Brief {
+  #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     padding-bottom: 20px;

@@ -19,89 +19,26 @@
     <!-- html5 響應式網頁架構 id（唯一 #） class（類別 .） 語意式標籤語-->
     <!-- 頁首header（每頁固定） 主內容main（隨著頁面主題而不同，IE瀏覽器不支援） 頁尾footer（每頁固定） 文章（article，IE支援取代 main 標籤）-->
     <header>
-        <div>
-            <div id="Icon">
-                <div class="Line item">Line</div>
-                <div class="FB item">FB</div>
-                <div class="YodoMember item">會員</div>
-                <div class="ShoppingCar item">購物車</div>
-            </div>
-            <h1>芸豆嬰幼兒用品</h1>
-            <ul id="Navber">
-                <li class="YudoFood">食。奶粉</li>
-                <li class="YudoClothing">衣。服裝</li>
-                <li class="YudoBabybed">住。嬰兒床</li>
-                <li class="YudoBabyCar">行。嬰兒車</li>
-                <li class="MenuBtn">menu</li>
-            </ul>
-        </>
         <!-- 導覽列 nav  -->
         <nav>
-            <!-- 導覽列標籤 nav  項目清單 ul li ；商標 標題1（h1） -->
-            <h1 id="YudoLogo">芸豆嬰幼兒用品</h1>
-            <!-- icon 區塊標籤div id:icon -->
-            <ul id="YudoIcon">
-                <li class="YudoMember">會員</li>
-                <li class="YudoShopingCar">購物車</li>
+            <ul id="Icon">
+                <li class="Line item">Line</li>
+                <li class="FB item">FB</li>
+                <li class="YodoMember item">會員</li>
+                <li class="ShoppingCar item">購物車</li>
             </ul>
-            <ul class="YudoBtnBox">
-                <li>限量商品</li>
-                <li>好物分享</li>
-
-                <li class="YudoFood">食。奶粉</li>
-                <ul class="YudoFoodBox">
-                    <li class="YudoMilk">奶粉</li>
-                    <li class="YudoTrition">營養品</li>
-                </ul>
-
-                <li>衣。服裝</li>
-                <ul>
-                    <li>范崙鐵諾</li>
-                    <li>伯鑫。大人</li>
-                </ul>
-
-                <li>住。嬰兒床</li>
-                <ul>
-                    <li>寢具</li>
-                    <li>睡袋</li>
-                    <li>彈床</li>
-                    <li>嬰兒床</li>
-                    <li>遊戲床</li>
-                </ul>
-
-                <li>行。嬰兒車</li>
-                <ul>
-                    <li>推車</li>
-                    <li>傘車</li>
-                    <li>機車座椅</li>
-                    <li>汽車座椅</li>
-                </ul>
-
-                <li>樂。玩具</li>
-                <ul>
-                    <li>玩具</li>
-                    <li>腳踏車</li>
-                    <li>三輪車</li>
-                    <li>電動車</li>
-                </ul>
-
-                <li>其他商品</li>
-                <ul>
-                    <li>尿布</li>
-                    <li>哺孕用品</li>
-                    <li>清潔用品</li>
-                    <li>保養用品</li>
-                    <li>媽媽用品</li>
-                </ul>
+            <h1>芸豆嬰幼兒用品</h1>
+            <ul id="Navber">
+                <li class="YudoFood item">食。奶粉</li>
+                <li class="Line">|</li>
+                <li class="YudoClothing item">衣。服裝</li>
+                <li class="Line">|</li>
+                <li class="YudoBabybed item">住。嬰兒床</li>
+                <li class="Line">|</li>
+                <li class="YudoBabyCar item">行。嬰兒車</li>
+                <li class="Line">|</li>
+                <li class="MenuBtn item">menu</li>
             </ul>
-            <!-- 手機版的選單按鈕 -->
-            <div id="MenuBtn">
-                <!-- 設定方法一：直接置入圖片 img ； alt 替代文字（圖片連結失效時）；title 提示文字（不重要圖片，可以不用設定）；圖片很難設定為 水平置中；解決方式：利用文字取代圖片，設定背景圖呈現 -->
-                MenuBtn
-                <!-- <img src="images/icon/menu.svg" alt="芸豆嬰幼兒用品選單" title="芸豆嬰幼兒用品選單"> -->
-            </div>
-            <!-- 清除浮動框架 p（段落）-->
-            <p class="Clear"></p>
         </nav>
     </header>
 
@@ -126,213 +63,215 @@
         <article id="Limited">
             <h1>限量商品</h1>
             <!-- 區段 section  -->
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>1</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
-
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>2</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
-
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>3</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
-
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>4</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
-
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>5</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
-
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>6</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
-
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>7</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
-
-            <section class="Commodity">
-                <ul id="TitleBox">
-                    <li class="Title">限量特賣</li>
-                    <!-- 行內標籤 不換行 span -->
-                    <li class="Number">庫存<sapn>8</sapn></li>
-                    <li class="Text">數量有限，售完為止</li>
-                </ul>
-                <div class="Images">
-                    <!-- 圖片連結 -->
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="Love">我的最愛</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
-                <ul id="PriceBox">
-                    <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
-                    <li class="BargainPrice">特價<span>800</span>元</li>
-                    <li class="Car">購物車</li>
-                </ul>
-            </section>
+            <article>
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>1</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+    
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>2</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+    
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>3</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+    
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>4</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+    
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>5</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+    
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>6</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+    
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>7</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+    
+                <section class="Commodity">
+                    <ul id="TitleBox">
+                        <li class="Title">限量特賣</li>
+                        <!-- 行內標籤 不換行 span -->
+                        <li class="Number">庫存<sapn>8</sapn></li>
+                        <li class="Text">數量有限，售完為止</li>
+                    </ul>
+                    <div class="Images">
+                        <!-- 圖片連結 -->
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="Love">我的最愛</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過26個字數（ <mark>英文與阿拉伯數字為26個字數，中文為13個字數</mark> ），會利用 ...... 設計</div>
+                    <ul id="PriceBox">
+                        <li class="OriginalPrice">原價<span><s>1,000</s></span>元</li>
+                        <li class="BargainPrice">特價<span>800</span>元</li>
+                        <li class="Car">購物車</li>
+                    </ul>
+                </section>
+            </article>
 
             <!-- 換頁 more -->
             <li class="more">
@@ -342,128 +281,129 @@
 
         <article id="Share">
             <h1>好物分享</h1>
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
-            <section class="Commodity">
-                <p class="Null"></p>
-                <div class="Images">
-                    <a href="javascript:;">
-                        <img src="images/Merchandise/001.jpg" alt="">
-                    </a>
-                </div>
-                <div class="LName">
-                    <h3>商品名稱</h3>
-                    <li class="LineId">聯絡客服</li>
-                </div>
-                <!-- 螢光標記 mark 刪除線 s -->
-                <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
-            </section>
-
+            <article>
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+                <section class="Commodity">
+                    <p class="Null"></p>
+                    <div class="Images">
+                        <a href="javascript:;">
+                            <img src="images/Merchandise/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="LName">
+                        <h3>商品名稱</h3>
+                        <li class="LineId">聯絡客服</li>
+                    </div>
+                    <!-- 螢光標記 mark 刪除線 s -->
+                    <div class="Brief">商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計</div>
+                </section>
+    
+            </article>
             
-
             <li class="more">
                 <a href="javascript:;">more...</a>
             </li>
