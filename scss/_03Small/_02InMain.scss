@@ -87,9 +87,7 @@
         $TFS: $Trem * 1.7;
         $NFS: $Trem * 1.1;
         background-image: url(../../images/BG/001.gif);
-        // 一行 兩欄
-        display: flex;
-        flex-wrap: wrap;
+
         > h1 {
             width: $W1P * 10;
             // 文字尺寸
@@ -104,9 +102,13 @@
         }
 
         > article {
+            width: $W1P * 9.5;
+            // 一行 兩欄
+            display: flex;
+            flex-wrap: wrap;
             > .Commodity {
                 // 寬度
-                width: $W1P * 4.5;
+                width: $W1P * 4.8;
                 // 外間距
                 margin: {
                     bottom: 20px;
@@ -220,7 +222,7 @@
                         // 寬度
                         width: $W1P * 3.5;
                         // 文字尺寸
-                        font-size: $Trem * 0.9;
+                        font-size: $Trem * 0.8;
                         // 內間距
                         padding: {
                             top: $Trem * 0.3;
@@ -243,7 +245,7 @@
 
                         > span {
                             // em or rem 的尺寸，基於 根目錄 之下的值為基準
-                            font-size: $Trem * 1.7;
+                            font-size: $Trem * 1.5;
                             padding: {
                                 left: 5px;
                                 right: 5px;
@@ -305,9 +307,7 @@
         $TFS: $Trem * 1.7;
         $NFS: $Trem * 1.1;
         background-image: url(../../images/BG/002.gif);
-        // 一行 兩欄
-        display: flex;
-        flex-wrap: wrap;
+
         > h1 {
             width: $W1P * 10;
             // 文字尺寸
@@ -322,6 +322,10 @@
         }
 
         > article {
+            width: $W1P * 9.5;
+            // 一行 兩欄
+            display: flex;
+            flex-wrap: wrap;
             > .Commodity {
                 // 寬度
                 width: $W1P * 4.5;

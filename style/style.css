@@ -356,43 +356,56 @@ You may only @extend selectors within the same directive.
 
 @media screen and (min-width: 576px) {
   header {
-    width: 100vw;
+    width: 100%;
     background-color: violet;
   }
-  header nav {
-    /* 
-        浮動對齊的問題 float
-        1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度
-        2. nav 的父框架 header ，高度消失（展開）
-        解決方式
-        1. nav 的父框架 header，給予高度；或是 nav 給予高度
-        2. 清除浮動狀態，由 nav 設定
-        3. 利用圖片高度撐開父框架的高
-        */
-    width: 100vw;
-    background-color: #b3f5be;
+  header > nav > #Icon {
+    width: 100%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  header nav #YudoLogo {
-    width: 85vw;
+  header > nav > #Icon > .item {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: red;
   }
-  header nav #MenuBtn {
-    width: 15vw;
+  header > nav > h1 {
+    width: 100%;
+    height: 80px;
+    text-align: center;
   }
-  header nav #YudoLogo {
-    float: left;
-    background-color: palevioletred;
+  header > nav > #Navber {
+    width: 100%;
+    height: 60px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  header nav #YudoIcon {
-    display: none;
+  header > nav > #Navber > .Line {
+    width: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 60px;
   }
-  header nav .YudoBtnBox {
-    display: none;
-  }
-  header nav #MenuBtn {
-    float: left;
-  }
-  header nav .Clear {
-    clear: both;
+  header > nav > #Navber > .MenuBtn {
+    width: 60px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../images/icon/menu.svg);
   }
   footer {
     margin-top: 2rem;
@@ -497,11 +510,6 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Limited {
     background-image: url(../../images/BG/001.gif);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   #Main > #Limited > h1 {
     width: 100%;
@@ -510,8 +518,16 @@ You may only @extend selectors within the same directive.
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  #Main > #Limited > article {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   #Main > #Limited > article > .Commodity {
-    width: 45%;
+    width: 48%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
@@ -582,7 +598,7 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice {
     width: 35%;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding-top: 0.3rem;
   }
   #Main > #Limited > article > .Commodity > #PriceBox > .OriginalPrice > span {
@@ -595,7 +611,7 @@ You may only @extend selectors within the same directive.
     font-size: 1.2rem;
   }
   #Main > #Limited > article > .Commodity > #PriceBox > .BargainPrice > span {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
@@ -623,11 +639,6 @@ You may only @extend selectors within the same directive.
   }
   #Main > #Share {
     background-image: url(../../images/BG/002.gif);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   #Main > #Share > h1 {
     width: 100%;
@@ -635,6 +646,14 @@ You may only @extend selectors within the same directive.
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  #Main > #Share > article {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #Main > #Share > article > .Commodity {
     width: 45%;
