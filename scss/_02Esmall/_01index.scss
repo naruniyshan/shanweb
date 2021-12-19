@@ -117,7 +117,6 @@ header {
 footer {
     // 物件之的間距值 vh rem
     // margin-top: 2rem;
-
     hr {
         margin-bottom: 2rem;
     }
@@ -131,6 +130,7 @@ footer {
             // 彈性佈局
             display: flex;
             @include DNli;
+            font-size: $Trem * 0.9;
         }
     }
 
@@ -138,6 +138,8 @@ footer {
     p {
         text-align: center;
         margin-bottom: 0.7rem;
+        font-size: $Trem * 0.75;
+        letter-spacing: 1px;
     }
     address {
         //呼叫 混合函式
