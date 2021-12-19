@@ -81,8 +81,8 @@
 
     > #Limited {
         // 計算式
-        $TW : $W1P * 7;
-        $NW : $W1P * 10 - $TW;
+        $TW: $W1P * 7;
+        $NW: $W1P * 10 - $TW;
 
         $TFS: $Trem * 1.7;
         $NFS: $Trem * 1.1;
@@ -107,7 +107,7 @@
             }
             // 背景顏色
             background-color: rgb(255, 255, 255);
-            
+
             > #TitleBox {
                 // 寬度
                 width: $W1P * 8.5;
@@ -125,7 +125,6 @@
                     bottom: 10px;
                 }
 
-                
                 > .Title {
                     width: $TW;
                     font-size: $TFS;
@@ -144,7 +143,6 @@
                     text-align: right;
                 }
             }
-
 
             > .Images {
                 // 寬度
