@@ -103,9 +103,7 @@
 
         > article {
             width: $W1P * 9.5;
-            // 一行 兩欄
-            display: flex;
-            flex-wrap: wrap;
+
             > .Commodity {
                 // 寬度
                 width: $W1P * 10 / 3 - 3%;

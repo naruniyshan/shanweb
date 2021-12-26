@@ -10,6 +10,11 @@
         // 定位點：相對定位
         position: relative;
 
+        // 外間距 設定為 nav 的高度
+        margin: {
+            top: 190px;
+        }
+
         $ImgPadding: 335px;
         // 父框架的padding 335px - 子框架的padding 250px = 相差值 $Differ
         $Differ: 85px;

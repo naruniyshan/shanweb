@@ -72,11 +72,19 @@ header {
     // }
 
     > nav {
+        // 定位點 停佇
+        position: fixed;
+        // 靠上
+        top: 0;
+        z-index: 999;
+        background-color: wheat;
         > #Icon {
             width: $W1P * 10;
             @include DNli;
             display: flex;
+            // 行（順序排列）
             flex-direction: row;
+            // 主軸心（水平）靠右
             justify-content: flex-end;
             > .item {
                 width: 50px;
