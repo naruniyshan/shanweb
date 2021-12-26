@@ -111,6 +111,32 @@ You may only @extend selectors within the same directive.
     line-height: 110px;
     background-color: yellowgreen;
   }
+  header > #MenuNav > ul {
+    width: 95%;
+    margin-top: 25px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: salmon;
+  }
+  header > #MenuNav > ul > .Item {
+    width: 45%;
+    height: 70px;
+    margin-bottom: 10px;
+    background-color: sandybrown;
+  }
+  header > #MenuNav > ul > .Itemtwo {
+    width: 30.33333%;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header > #MenuNav > ul > .Milk {
+    background-color: slateblue;
+  }
   footer hr {
     margin-bottom: 2rem;
   }
