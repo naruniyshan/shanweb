@@ -84,7 +84,7 @@ header {
             display: flex;
             // 行（順序排列）
             flex-direction: row;
-            // 主軸心（水平）靠右
+            // 主軸對齊（水平）靠右
             justify-content: flex-end;
             > .item {
                 width: 50px;

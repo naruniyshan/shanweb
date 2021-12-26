@@ -106,6 +106,10 @@
             // 一行 兩欄
             display: flex;
             flex-wrap: wrap;
+            // 行（順序排列）
+            flex-direction: row;
+            // 主軸心（水平）靠左 -- 預設值，可以不給
+            // justify-content: flex-start;
 
             > .Commodity {
                 // 寬度

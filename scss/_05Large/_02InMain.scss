@@ -103,13 +103,20 @@
 
         > article {
             width: $W1P * 9.5;
+            // 導讀 03Small 02 檔
 
             > .Commodity {
+                // 寬度變數
+                $ComW: $W1P * 10 / 3 - 3%;
                 // 寬度
-                width: $W1P * 10 / 3 - 3%;
+                width: $ComW;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    // ( (總寬度 100) - (物件的寬度 30.3333 * 物件數 3 = 91) ) = 9 （剩下的寬度）
+                    // 剩下的寬度 / 左右邊各自的總數
+                    left: ((($W1P * 10) - ($ComW * 3)) / 2) / 3;
+                    right: ((($W1P * 10) - ($ComW * 3)) / 2) / 3;
                 }
                 // 背景顏色
                 background-color: rgb(255, 255, 255);
