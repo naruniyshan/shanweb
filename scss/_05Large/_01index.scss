@@ -5,7 +5,7 @@
 header {
     width: $W10 * 10;
     background-color: yellowgreen;
-    nav {
+    > #MainNav {
         // 彈性佈局 flex；對齊物件的父框架
         // 顯示方式：彈性佈局
         display: flex;

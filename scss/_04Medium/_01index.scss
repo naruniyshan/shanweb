@@ -9,7 +9,7 @@ header {
     // 寬度 100%;
     width: $W10 * 10;
     background-color: violet;
-    nav {
+    > #MainNav {
         /* 
         浮動對齊的問題 float
         1. #YudoLogo 與.YudoBtnBox 物件的父框架 nav，無寬度

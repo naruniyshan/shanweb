@@ -9,7 +9,7 @@ header {
     // 寬度 100%;
     width: $W1P * 10;
     background-color: violet;
-    > nav {
+    > #MainNav {
         > #Icon {
             width: $W1P * 10;
             @include DNli;
