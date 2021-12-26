@@ -160,10 +160,15 @@ header {
             background-color: yellowgreen;
         }
         > ul {
-            width: $W1P * 9.5;
-            // 上邊界 外間距
+            width: $W1P * 9;
+            // 定位點 相對定位
+            position: relative;
+            // 移位 往下移動（設定 top 數值）
+            top: 50%;
+
+            // 上邊界 外間距 35px
             margin: {
-                top: 25px;
+                top: -260px;
             }
             @include DNli;
             // 彈性佈局

@@ -112,8 +112,10 @@ You may only @extend selectors within the same directive.
     background-color: yellowgreen;
   }
   header > #MenuNav > ul {
-    width: 95%;
-    margin-top: 25px;
+    width: 90%;
+    position: relative;
+    top: 50%;
+    margin-top: -260px;
     list-style-type: none;
     display: -webkit-box;
     display: -ms-flexbox;
