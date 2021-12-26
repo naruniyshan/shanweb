@@ -31,6 +31,7 @@ You may only @extend selectors within the same directive.
     background-color: violet;
   }
   header > nav {
+    width: 100%;
     position: fixed;
     top: 0;
     z-index: 999;
