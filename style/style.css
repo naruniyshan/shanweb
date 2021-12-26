@@ -94,6 +94,7 @@ You may only @extend selectors within the same directive.
     overflow: hidden;
     z-index: 9999;
     background-color: white;
+    display: none;
   }
   header > #MenuNav > #Close {
     width: 40px;
@@ -478,6 +479,61 @@ You may only @extend selectors within the same directive.
     background-position: center;
     background-size: contain;
     background-image: url(../../images/icon/menu.svg);
+  }
+  header > #MenuNav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: white;
+    display: none;
+  }
+  header > #MenuNav > #Close {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rosybrown;
+  }
+  header > #MenuNav > h1 {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    background-color: yellowgreen;
+  }
+  header > #MenuNav > ul {
+    width: 90%;
+    position: relative;
+    top: 50%;
+    margin-top: -260px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: salmon;
+  }
+  header > #MenuNav > ul > .Item {
+    width: 45%;
+    height: 70px;
+    margin-bottom: 10px;
+    background-color: sandybrown;
+  }
+  header > #MenuNav > ul > .Itemtwo {
+    width: 30.33333%;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  header > #MenuNav > ul > .Milk {
+    background-color: slateblue;
   }
   footer {
     margin-top: 2rem;

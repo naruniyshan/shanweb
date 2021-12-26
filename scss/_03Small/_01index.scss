@@ -50,6 +50,85 @@ header {
             }
         }
     }
+
+    > #MenuNav {
+        // 寬度 與 高度（裝置的可視高度）
+        width: $W1P * 10;
+        height: $W1P * 10;
+        // 定位點 絕對定位
+        position: absolute;
+        // 停佇
+        position: fixed;
+        // 靠上
+        top: 0;
+        // 溢位 隱藏捲軸
+        overflow: hidden;
+        z-index: 9999;
+        background-color: white;
+        @include DN;
+
+        > #Close {
+            // 寬度與高度
+            width: 40px;
+            height: 40px;
+            @include DNli;
+            // 定位點 絕對定位
+            position: absolute;
+            // 位移 靠右 要設定 上和右 與頁面間距
+            top: 10px;
+            right: 10px;
+            background-color: rosybrown;
+        }
+        > h1 {
+            // 寬度
+            width: $W1P * 10;
+            // 高度
+            height: 110px;
+            text-align: center;
+            line-height: 110px;
+            background-color: yellowgreen;
+        }
+        > ul {
+            width: $W1P * 9;
+            // 定位點 相對定位
+            position: relative;
+            // 移位 往下移動（設定 top 數值）
+            top: 50%;
+
+            // 上邊界 外間距 35px
+            margin: {
+                top: -260px;
+            }
+            @include DNli;
+            // 彈性佈局
+            display: flex;
+            // 換行
+            flex-wrap: wrap;
+            background-color: salmon;
+
+            > .Item {
+                width: $W1P * 9 / 2;
+                height: 70px;
+                margin: {
+                    bottom: 10px;
+                }
+                background-color: sandybrown;
+            }
+
+            > .Itemtwo {
+                width: $W1P * 10 / 3 - 3;
+                height: 90px;
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+            }
+
+            > .Milk {
+                background-color: slateblue;
+            }
+        }
+    }
 }
 
 footer {

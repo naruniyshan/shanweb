@@ -137,6 +137,7 @@ header {
         overflow: hidden;
         z-index: 9999;
         background-color: white;
+        @include DN;
 
         > #Close {
             // 寬度與高度
