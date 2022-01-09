@@ -122,15 +122,18 @@ function WhileCode() {
     while ( Number > 0 ) {
         console.log("第 " + count + " 次" );
         count = count + 1;
-        
+
         attack = Math.floor(Math.random() * 31);
         console.log("亂數為：" + attack);
 
+        if (attack >= 10 )
         // 將計算過後的值，再指定給 Number
-        Number = Number - attack;
+            Number = Number - attack;
+        
+        if ( Number < 0 )
+            Number = 0;
 
         console.log("計算結果：" + Number);
-
     }
 
 }
