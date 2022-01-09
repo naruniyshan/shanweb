@@ -17,7 +17,32 @@ console.log(one);
 console.log(ONE);
 console.log("02");
 
+
+// 日期函數 Date 產生新的 Date
+var year = new Date().getFullYear();
+// var now = new Date();
+// var year = now.getFullYear();
+
 // 年份變數
-var Year = "2022";
+// var Year = "2022";
 // 由 html 顯示資料
-document.getElementById('Year').textContent = Year;
+document.getElementById('Year').textContent = year;
+
+// 條件判斷 if...else 單一條件
+var NumBer = 12;
+// 顯示條件成立，執行的資料
+if ( NumBer < 5) {
+    console.log("數字小於 5");
+} 
+
+if ( NumBer > 10 ) console.log("數字大於 10");
+
+if ( NumBer > 10 )
+    console.log("數字為：" + NumBer);
+
+// 顯示條件成立，執行的資料，或是不成立時，執行的資料
+// if () {
+
+// } else {
+
+// }
