@@ -224,11 +224,12 @@ footer {
     }
 
     // 版權宣告
-    p {
+    div {
         text-align: center;
-        margin-bottom: 0.7rem;
+        padding-bottom: 1rem;
         font-size: $Trem * 0.75;
         letter-spacing: 1px;
+
     }
     address {
         //呼叫 混合函式

@@ -154,9 +154,9 @@ You may only @extend selectors within the same directive.
     list-style-type: none;
     font-size: 0.9rem;
   }
-  footer p {
+  footer div {
     text-align: center;
-    margin-bottom: 0.7rem;
+    padding-bottom: 1rem;
     font-size: 0.75rem;
     letter-spacing: 1px;
   }
