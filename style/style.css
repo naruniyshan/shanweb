@@ -94,7 +94,6 @@ You may only @extend selectors within the same directive.
     overflow: hidden;
     z-index: 9999;
     background-color: white;
-    display: none;
   }
   header > #MenuNav > #Close {
     width: 40px;
