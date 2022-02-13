@@ -1,13 +1,13 @@
-CopyRightContent ();
+CopyRightContent();
 
-function TimeYear(){
+function TimeYear() {
     var year = new Date().getFullYear();
     document.getElementById('Year').textContent = year;
 };
 
 // 新增 html 的標籤與內容
 
-function CopyRightContent () {
+function CopyRightContent() {
     // 宣告變數 在 html 內新增 div 標籤
     let div = document.createElement('div');
 
@@ -23,7 +23,7 @@ function CopyRightContent () {
     TimeYear();
 
     // 調整 框架 位置
-    
+
     let Address = document.getElementById('Address');
 
     // 3. 在被選取的元素之前插入內容 before() 置入被選取元素標籤之前
@@ -47,14 +47,14 @@ function SmallNavCon() {
     ul.setAttribute("id", "PhoneNav");
 
     let PhoneNav = document.getElementById('PhoneNav');
-    
+
     let NavClass = ['About', 'VerticalLine', 'Shop', 'VerticalLine', 'message', 'VerticalLine', 'Address'];
 
     let NavCon = ['品牌故事', '|', '購物說明', '|', '客服留言', '|', '門市資訊'];
 
     // 新增標籤時，程式的運作方式為：先新增標籤，賦予屬性，再指定新增的外框架（此為一個迴圈）
     // 迴圈內的數字 7 ，是因為陣列而產生，故要隨著陣列值的數量而自動增減
-    for ( let i = 0; i< NavClass.length; i++) {
+    for (let i = 0; i < NavClass.length; i++) {
         let li = document.createElement('li');
         // 新增屬性
         li.setAttribute("class", NavClass[i]);
@@ -87,9 +87,9 @@ function PhoneMenushow() {
     let Navber = document.getElementById('Navber');
     // Navber.getElementsByClassName('MenuBtn')[0].style.display = "";
     let MenuBtn = Navber.getElementsByClassName('MenuBtn');
-    
+
     // // 顯示 手機版選單內容
-    for ( let i = 0; i < MenuBtn.length; i++) {
+    for (let i = 0; i < MenuBtn.length; i++) {
         MenuBtn[i].style.display = "";
     }
 }
@@ -98,5 +98,5 @@ function PhoneMenushow() {
 
 Pageload();
 function Pageload() {
-    $('header').load("../web/header.html");
+    $('header').load("web/header.html");
 }
