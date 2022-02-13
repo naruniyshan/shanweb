@@ -21,7 +21,53 @@
     <!-- html5 響應式網頁架構 id（唯一 #） class（類別 .） 語意式標籤語-->
     <!-- 頁首header（每頁固定） 主內容main（隨著頁面主題而不同，IE瀏覽器不支援） 頁尾footer（每頁固定） 文章（article，IE支援取代 main 標籤）-->
     <header>
-
+        <!-- 導覽列 nav  -->
+        <nav id="MainNav">
+            <ul id="Icon">
+                <li class="Line item">Line</li>
+                <li class="FB item">FB</li>
+                <li class="YodoMember item">會員</li>
+                <li class="ShoppingCar item">購物車</li>
+            </ul>
+            <h1>
+                <a href="index.html"> 芸豆嬰幼兒用品</a>
+            </h1>
+            <ul id="Navber">
+                <li class="YudoFood item">
+                    <a href="web/limited.html">限量商品</a>
+                </li>
+                <li class="Line">|</li>
+                <li class="YudoClothing item">衣。服裝</li>
+                <li class="Line">|</li>
+                <li class="YudoBabybed item">住。嬰兒床</li>
+                <li class="Line">|</li>
+                <li class="YudoBabyCar item">行。嬰兒車</li>
+                <li class="Line">|</li>
+                <li class="MenuBtn item">menu</li>
+            </ul>
+        </nav>
+        <!-- 行動裝置 選單 -->
+        <nav id="MenuNav">
+            <li id="Close">Close</li>
+            <h1>
+                <a href="index.html">芸豆</a>
+            </h1>
+            <ul>
+                <li class="Limited Item">
+                    <a href="web/limited.html">限量商品</a>
+                </li>
+                <li class="Share Item">好物分享</li>
+                <li class="Itemtwo Milk">食。奶粉</li>
+                <li class="Itemtwo">衣。服裝</li>
+                <li class="Itemtwo">住。嬰兒床</li>
+                <li class="Itemtwo">行。嬰兒車</li>
+                <li class="Itemtwo">樂。玩具</li>
+                <li class="Itemtwo">其他用品</li>
+                <li class="Itemtwo">購物說明</li>
+                <li class="Itemtwo">客服留言</li>
+                <li class="Itemtwo">門市位置</li>
+            </ul>
+        </nav>
     </header>
 
     <article id="Main">
@@ -398,7 +444,25 @@
         </article>
     </article>
 
-    <footer></footer>
+    <footer id="Footer">
+        <hr>
+        <!-- 手機版呈現 -->
+        <nav class="SmallNav" id="SmallNav"></nav>
+
+        <!-- 擁有者資訊 聯絡資訊 建議瀏覽器解析度 瀏覽人數（比較少用，資料庫運作） 版權聲明 連結：隱私權政策 網站安全政策 服務條款 商品的次選單  -->
+        <!-- 段落標籤 p ；行內範圍 span（不會另外換行） -->
+        <!-- <div>芸豆嬰幼兒用品版權宣告&copy;2020 - <span id="Year"></span></div> -->
+
+        <!-- 聯絡資訊 address 地址、客服電話、E-mail、LineID、FB、Google地圖 -->
+        <address id="Address">
+            <p class="Address">台中市</p>
+            <p class="Tel">0800-123456</p>
+            <p class="E-Mail">yourname@gmail.com</p>
+            <p class="LineID">LineID</p>
+            <p class="FB">FB</p>
+            <p class="GoogleMap">地圖</p>
+        </address>
+    </footer>
 
     <!-- 外連檔案 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
