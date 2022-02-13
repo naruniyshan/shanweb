@@ -5,12 +5,13 @@ function PhoneMenushow2() {
     $('#MenuNav').hide();
 
     // 開啟選單
-    $('.MenuBtn').click( function() {
+    $('.MenuBtn').click(function () {
         $('#MenuNav').show();
     });
 
     // 關閉選單
-    $('#Close').click( function() {
+    $('#Close').click(function () {
         $('#MenuNav').hide();
     });
 }
+
