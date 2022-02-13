@@ -202,7 +202,7 @@ You may only @extend selectors within the same directive.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 335px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -598,7 +598,7 @@ You may only @extend selectors within the same directive.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 385px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -944,7 +944,7 @@ You may only @extend selectors within the same directive.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 145px;
+    top: 227.5px;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -958,7 +958,7 @@ You may only @extend selectors within the same directive.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 385px;
+    padding-bottom: 550px;
     background-color: #865fa0;
   }
   #Main #Banner #ImgBox li {
@@ -967,7 +967,7 @@ You may only @extend selectors within the same directive.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 550px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -1228,7 +1228,7 @@ You may only @extend selectors within the same directive.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 145px;
+    top: 277.5px;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -1242,7 +1242,7 @@ You may only @extend selectors within the same directive.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 385px;
+    padding-bottom: 650px;
     background-color: #865fa0;
   }
   #Main #Banner #ImgBox li {
@@ -1251,7 +1251,7 @@ You may only @extend selectors within the same directive.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 650px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -1501,4 +1501,3 @@ You may only @extend selectors within the same directive.
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
