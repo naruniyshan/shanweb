@@ -286,6 +286,7 @@ function ShareCon(Number) {
 
         for( let b = 0; b < DClass.length; b++) {
             New_Class_Tag( 'Commodity', 'div', 'Class', DClass[b], i);
+            
         }
 
         let CO = document.getElementsByClassName('Commodity')[i];
@@ -306,8 +307,13 @@ function ShareCon(Number) {
         // 在 a 內新增
         A.appendChild(Img);
 
-        New_ClassTagContent( 'LName', 'h3', i, '商品名稱');
+        let H3Name = ['商品名稱1','商品名稱2', '商品名稱3', '商品名稱4', '商品名稱5', '商品名稱6', '商品名稱7', '商品名稱8'];
+
+        New_ClassTagContent( 'LName', 'h3', i, H3Name);
         New_Class_TagContent( 'LName', 'li', 'class', 'LineId', i, '聯絡客服');
+
+        document.getElementsByClassName('Brief')[i].innerHTML = "商品簡介，文字字數超過36個字數（ <mark>英文與阿拉伯數字為36個字數，中文為18個字數</mark> ），會利用 ...... 設計";
+
     }
     return;
 }
@@ -345,7 +351,11 @@ function New_ClassTagContent(ClassName,NewTagName,i,Content) {
     let TagName = document.createElement(NewTagName);
 
     // 在 框架 內建立 標籤
-    BoxTag.appendChild(TagName).innerHTML = Content;
+    // BoxTag.appendChild(TagName).innerHTML = Content;
+
+    // i = 8  b = 0  8-8 =0    i(8) - 8 = 0   i(9) - 8 = 1
+
+    BoxTag.appendChild(TagName).innerHTML = Content[ i - 8 ];
 }
 
 // 給予 渲染框架 一個 ID 屬性
