@@ -306,12 +306,49 @@ function ShareCon(Number) {
         // 在 a 內新增
         A.appendChild(Img);
 
-        
+        New_ClassTagContent( 'LName', 'h3', i, '商品名稱');
+        New_Class_TagContent( 'LName', 'li', 'class', 'LineId', i, '聯絡客服');
     }
     return;
 }
 
-// 給予 一個 ID 屬性
+// 只渲染框架
+function New_IDTag(IdName,NewTagName) {
+    // 指定在 框架（自訂） 內新增標籤，宣告變數
+    let BoxTag = document.getElementById(IdName);
+
+    // 新增標籤 宣告變數
+    let TagName = document.createElement(NewTagName);
+
+    // 在 框架 內建立 標籤
+    BoxTag.appendChild(TagName);
+}
+
+// 只渲染框架
+function New_ClassTag(ClassName,NewTagName,i) {
+    // 指定在 框架（自訂） 內新增標籤，宣告變數
+    let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+    // 新增標籤 宣告變數
+    let TagName = document.createElement(NewTagName);
+
+    // 在 框架 內建立 標籤
+    BoxTag.appendChild(TagName);
+}
+
+// 渲染框架給予資料內容
+function New_ClassTagContent(ClassName,NewTagName,i,Content) {
+    // 指定在 框架（自訂） 內新增標籤，宣告變數
+    let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+    // 新增標籤 宣告變數
+    let TagName = document.createElement(NewTagName);
+
+    // 在 框架 內建立 標籤
+    BoxTag.appendChild(TagName).innerHTML = Content;
+}
+
+// 給予 渲染框架 一個 ID 屬性
 function New_ID_Tag( IdName, NewTagName, IdClass, IdClassName){
     // 指定在 框架（自訂） 內新增標籤，宣告變數
     let BoxTag = document.getElementById(IdName);
@@ -326,7 +363,7 @@ function New_ID_Tag( IdName, NewTagName, IdClass, IdClassName){
     TagName.setAttribute(IdClass, IdClassName);
 }
 
-// 給予 一個 class 屬性
+// 給予 渲染框架 一個 class 屬性
 function New_Class_Tag( ClassName, NewTagName, IdClass, IdClassName, i){
     // 指定在 框架（自訂） 內新增標籤，宣告變數
     let BoxTag = document.getElementsByClassName(ClassName)[i];
@@ -336,6 +373,21 @@ function New_Class_Tag( ClassName, NewTagName, IdClass, IdClassName, i){
 
     // 在 框架 內建立 標籤
     BoxTag.appendChild(TagName);
+
+    // 給予屬性
+    TagName.setAttribute(IdClass, IdClassName);
+}
+
+// 給予 渲染框架 一個 class 屬性 給予內容
+function New_Class_TagContent( ClassName, NewTagName, IdClass, IdClassName, i, Content){
+    // 指定在 框架（自訂） 內新增標籤，宣告變數
+    let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+    // 新增標籤 宣告變數
+    let TagName = document.createElement(NewTagName);
+
+    // 在 框架 內建立 標籤
+    BoxTag.appendChild(TagName).innerHTML = Content;
 
     // 給予屬性
     TagName.setAttribute(IdClass, IdClassName);
