@@ -288,20 +288,25 @@ function ShareCon(Number) {
             New_Class_Tag( 'Commodity', 'div', 'Class', DClass[b], i);
         }
 
-        // New_Class_Tag( 'Images', 'a', 'href,class', 'javascript:;,A', i);
-        // 無法接受，兩個以上的屬性設定
-        
-        
-        // New_Class_Tag( 'a', 'img', 'src', 'images/Merchandise/001.jpg', 0);
-        // 標籤 與 class 型態不符
+        let CO = document.getElementsByClassName('Commodity')[i];
+        // Images 內新增資料
+        let A = document.createElement('a');
+        // 新增 連結 屬性
+        A.setAttribute("href", "javascript:;");
+        // 宣告 指定 class 的變數
+        let Images = CO.querySelector('.Images');
+        // let Images =CO.getElementsByClassName('Images')[i];
+        // 在 Images 內新增
+        Images.appendChild(A);
 
-        // New_Class_Tag2( 'Images', 'a', 'href', 'javascript:;', 'class', 'A', i);
+        // Images > a 內新增資料
+        let Img = document.createElement('img');
+        // 屬性
+        Img.setAttribute("src", "images/Merchandise/001.jpg");
+        // 在 a 內新增
+        A.appendChild(Img);
 
-        // for( let B = 0; B < i; B++) {
-        //     New_Class_Tag( 'A', 'img', 'src', 'images/Merchandise/001.jpg', B);
-        // };
         
-        AImg( 'Commodity', 'Images', 'javascript:;', 'images/Merchandise/001.jpg', i);
     }
     return;
 }
