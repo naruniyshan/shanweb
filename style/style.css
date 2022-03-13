@@ -57,7 +57,6 @@ You may only @extend selectors within the same directive.
     height: 50px;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: red;
   }
   header > #MainNav > h1 {
     width: 100%;
@@ -438,9 +437,11 @@ You may only @extend selectors within the same directive.
     width: 45px;
     height: 45px;
     font-size: 1.5rem;
+    font-weight: 200;
     line-height: 45px;
     text-align: center;
-    background-color: burlywood;
+    color: white;
+    background-color: #cf811a;
   }
 }
 
@@ -468,7 +469,6 @@ You may only @extend selectors within the same directive.
     height: 50px;
     margin-left: 5px;
     margin-right: 5px;
-    background-color: red;
   }
   header > #MainNav > h1 {
     width: 100%;
@@ -859,6 +859,24 @@ You may only @extend selectors within the same directive.
     text-decoration: none;
     color: white;
     border-radius: 20px;
+  }
+  #Main > #Limited #Pagination {
+    width: 385px;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main > #Limited #Pagination .bar-left {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    background-color: #cf811a;
   }
 }
 
