@@ -16,6 +16,7 @@ let ChangeImage = function(num) {
     // 判斷式 條件 -- 索引編號 + 自訂參數值 >=0 和 索引編號 + 自訂參數值 < 圖片陣列的長度，同時成立時
 
     current = ( current + num + Pimages.length ) % Pimages.length;
+
     // img 預設圖
     document.getElementById('Bannerimg').src = Pimages[current];
 
@@ -27,6 +28,7 @@ let ChangeImage = function(num) {
 
     // 手機
     document.getElementById('Simg').srcset = Simages[current];
+
 
     // current += num;
 

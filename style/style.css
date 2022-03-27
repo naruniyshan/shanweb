@@ -65,9 +65,20 @@ You may only @extend selectors within the same directive.
   }
   header > #MainNav > h1 {
     width: 100%;
-    height: 80px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
-    background-color: brown;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../images/icon/logo.svg);
+    text-indent: -9999px;
+  }
+  header > #MainNav > h1 > a {
+    width: 70%;
+    height: 60px;
+    display: block;
   }
   header > #MainNav > #Navber {
     width: 100%;
@@ -192,32 +203,32 @@ You may only @extend selectors within the same directive.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 120px;
+    top: 40%;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 183, 75, 0.45);
   }
   #Main #Banner .RightBtn {
     right: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 183, 75, 0.45);
   }
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
     background-color: cadetblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
     float: left;
     position: absolute;
-    font-size: 72px;
+    font-size: 25px;
     text-align: center;
     padding-bottom: 335px;
   }
-  #Main #Banner #ImgBox .Item01 {
+  #Main #Banner #ImgBox .Item {
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -580,7 +591,7 @@ You may only @extend selectors within the same directive.
     display: flex;
     list-style-type: none;
   }
-  footer p {
+  footer div {
     text-align: center;
     margin-bottom: 0.7rem;
   }
@@ -604,7 +615,7 @@ You may only @extend selectors within the same directive.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 145px;
+    top: 40%;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -618,8 +629,8 @@ You may only @extend selectors within the same directive.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 385px;
     background-color: #865fa0;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -629,7 +640,7 @@ You may only @extend selectors within the same directive.
     text-align: center;
     padding-bottom: 385px;
   }
-  #Main #Banner #ImgBox .Item01 {
+  #Main #Banner #ImgBox .Item {
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -987,25 +998,24 @@ You may only @extend selectors within the same directive.
     width: 20px;
     height: 95px;
     text-align: center;
-    line-height: 95px;
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 227.5px;
+    top: 40%;
     border-radius: 15px;
+    cursor: pointer;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 183, 75, 0.45);
   }
   #Main #Banner .RightBtn {
     right: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 183, 75, 0.45);
   }
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 550px;
     background-color: #865fa0;
   }
   #Main #Banner #ImgBox li {
@@ -1016,7 +1026,7 @@ You may only @extend selectors within the same directive.
     text-align: center;
     padding-bottom: 550px;
   }
-  #Main #Banner #ImgBox .Item01 {
+  #Main #Banner #ImgBox .Item {
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -1271,26 +1281,26 @@ You may only @extend selectors within the same directive.
     width: 20px;
     height: 95px;
     text-align: center;
-    line-height: 95px;
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 277.5px;
+    top: 40%;
     border-radius: 15px;
+    cursor: pointer;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 183, 75, 0.45);
   }
   #Main #Banner .RightBtn {
     right: 2.5vw;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 183, 75, 0.45);
   }
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 650px;
     background-color: #865fa0;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -1298,9 +1308,9 @@ You may only @extend selectors within the same directive.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 650px;
+    padding-bottom: 600px;
   }
-  #Main #Banner #ImgBox .Item01 {
+  #Main #Banner #ImgBox .Item {
     width: 100vw;
     background-repeat: no-repeat;
     background-position: center;

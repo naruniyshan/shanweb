@@ -26,7 +26,8 @@
             // 移動階層（圖層）
             z-index: 15;
             // 左右按鈕，物件往下推算高度；(物件的父框架的高 / 2) - (按鈕高度 / 2) + 單位
-            top: ($ImgPadding / 2) - (95px / 2);
+            // top: ($ImgPadding / 2) - (95px / 2);
+            top: 40%;
             @include Rounded(15);
         }
         .LeftBtn {
@@ -43,8 +44,9 @@
             width: $W10 * 10;
             @include DNli;
             // 內間距 設定 下方間距，當成圖片的高度，單位為 % or vh
-            padding-bottom: $ImgPadding;
+            // padding-bottom: $ImgPadding;
             background-color: rgb(134, 95, 160);
+            font-size: 0;
             li {
                 width: $W10 * 10;
                 float: left;
@@ -61,6 +63,9 @@
                 padding-bottom: $ImgPadding;
             }
             .Item01 {
+                
+            }
+            .Item {
                 @include BPhoto(center, cover, Banner, "005.jpg");
             }
             .Item02 {
