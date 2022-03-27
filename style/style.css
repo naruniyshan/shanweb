@@ -17,6 +17,11 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: orangered;
+}
+
 /* 
 文字尺寸 單位 px（固定值） em（百分比，會疊加父框架設定的值） rem（百分比，不會疊加父框架設定的值）
 em 基礎為 1em = 16px ；rem 基礎為 1rem = 16px
@@ -76,6 +81,10 @@ You may only @extend selectors within the same directive.
     width: 5px;
     font-size: 1.5rem;
     text-align: center;
+    line-height: 60px;
+  }
+  header > #MainNav > #Navber > .item {
+    font-size: 0.7rem;
     line-height: 60px;
   }
   header > #MainNav > #Navber > .MenuBtn {
@@ -165,6 +174,9 @@ You may only @extend selectors within the same directive.
   }
   #Main {
     width: 100vw;
+  }
+  #Main > .NullBox {
+    height: 190px;
   }
   #Main #Banner {
     width: 100vw;
@@ -425,7 +437,7 @@ You may only @extend selectors within the same directive.
     color: white;
     border-radius: 20px;
   }
-  #Main > #Limited #Pagination {
+  #Main > #Limited #Pagination, #Share #Pagination {
     width: 90%;
     height: 55px;
     display: -webkit-box;
@@ -433,7 +445,7 @@ You may only @extend selectors within the same directive.
     display: flex;
     list-style-type: none;
   }
-  #Main > #Limited #Pagination .bar-left {
+  #Main > #Limited #Pagination .bar-left, #Share #Pagination .bar-left {
     width: 45px;
     height: 45px;
     font-size: 1.5rem;
@@ -441,7 +453,7 @@ You may only @extend selectors within the same directive.
     line-height: 45px;
     text-align: center;
     color: white;
-    background-color: #cf811a;
+    background-color: #ff7738;
   }
 }
 
@@ -567,7 +579,6 @@ You may only @extend selectors within the same directive.
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    background-color: #7b8f9b;
   }
   footer p {
     text-align: center;
@@ -860,7 +871,7 @@ You may only @extend selectors within the same directive.
     color: white;
     border-radius: 20px;
   }
-  #Main > #Limited #Pagination {
+  #Main > #Limited #Pagination, #Share #Pagination {
     width: 385px;
     height: 55px;
     display: -webkit-box;
@@ -868,7 +879,7 @@ You may only @extend selectors within the same directive.
     display: flex;
     list-style-type: none;
   }
-  #Main > #Limited #Pagination .bar-left {
+  #Main > #Limited #Pagination .bar-left, #Share #Pagination .bar-left {
     width: 45px;
     height: 45px;
     font-size: 1.5rem;
@@ -876,7 +887,7 @@ You may only @extend selectors within the same directive.
     line-height: 45px;
     text-align: center;
     color: white;
-    background-color: #cf811a;
+    background-color: #ff7738;
   }
 }
 

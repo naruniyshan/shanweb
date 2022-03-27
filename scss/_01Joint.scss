@@ -21,6 +21,14 @@ img {
     height: auto;
 }
 
+a {
+    // 底線樣式隱藏
+    text-decoration: none;
+
+    // 更改連結顯示顏色
+    color: orangered;
+}
+
 // 變數區
 // vw 在父框架與子框架之間，會呈現誤差值；所以建議單位用 %
 $W10: 10vw;

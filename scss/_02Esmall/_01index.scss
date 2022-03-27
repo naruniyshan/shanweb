@@ -115,6 +115,11 @@ header {
                 line-height: 60px;
             }
 
+            > .item {
+                font-size: $Trem * 0.7;
+                line-height: 60px;
+            }
+
             > .MenuBtn {
                 width: 60px;
                 text-indent: -9999px;

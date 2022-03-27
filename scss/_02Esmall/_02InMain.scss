@@ -3,6 +3,10 @@
     width: $W10 * 10;
     // background-color: burlywood;
 
+    > .NullBox {
+        height: 190px;
+    }
+
     #Banner {
         width: $W10 * 10;
         // 溢位設定，將超出的可視範圍給隱藏

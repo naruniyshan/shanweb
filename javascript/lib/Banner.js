@@ -7,17 +7,40 @@ let current = 0;
 // 方法 宣告變數，將執行方法直接寫入變數中
 let ChangeImage = function(num) {
     // 判斷式 條件 -- 索引編號 + 自訂參數值 >=0 和 索引編號 + 自訂參數值 < 圖片陣列的長度，同時成立時
+
+    current = ( current + num + images.length ) % images.length;
+    document.getElementById('Bannerimg').src = images[current];
+
+    // current += num;
+
+    // 不循環寫法
+    // if( current < 0) {
+    //     current = 0
+    // } else if ( current > images.length - 1 ){
+    //     current = images.length -1 
+    // }
+
+    // 循環寫法
+    // if( current < 0) {
+    //     current = images.length -1 
+    // } else if ( current > images.length - 1 ){
+    //     current = 0
+    // }
+
     
-    if( current + num >= 0 && current + num < images.length ) {
-        // 索引變數 = 索引變數 + 自訂參數值  current = current + num;
-        current += num;
-        // 轉場動畫
-        // 更改 圖片的連結檔案
-        document.getElementById('Bannerimg').src = images[current];
+    
+    // if( current + num >= 0 && current + num < images.length ) {
+    //     // 索引變數 = 索引變數 + 自訂參數值  current = current + num;
+    //     current += num;
+    //     // 轉場動畫
+    //     // 更改 圖片的連結檔案
+    //     document.getElementById('Bannerimg').src = images[current];
         
-    } else {
-        current = -1;
-    }
+    // } else {
+    //     current = -1;
+    // }
+    // document.getElementById('Bannerimg').src = images[current];
+    // console.log(current);
     
 }
 
@@ -31,9 +54,9 @@ document.getElementById('next').onclick = function() {
 }
 
 // 自動播放
-let Timer = setInterval(() => {
-    if ( current < images.length ) {
-        ChangeImage(1);
-        // console.log(current);
-    }
-}, 3000);
+// let Timer = setInterval(() => {
+//     if ( current < images.length ) {
+//         ChangeImage(1);
+//         console.log(current);
+//     }
+// }, 3000);
