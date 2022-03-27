@@ -84,9 +84,17 @@
             <div class="Btn RightBtn" id="next">＞</div>
 
             <ul id="ImgBox">
-                <li class="Item01">
+                <!-- <li class="Item01">
                     <img id="Bannerimg" src="images/Banner/banner01.jpg">
-                </li>
+                </li> -->
+                <picture class="Item01">
+                    <!-- 三個裝置 給予三個判斷 source-->
+                    <source id="Simg" srcset="images/Banner/s/simg001.jpg" media="(max-width: 767px)">
+                    <source id="Timg" srcset="images/Banner/t/timg001.jpg" media="(max-width: 1023px )">
+                    <source id="Pimg" srcset="images/Banner/pimg001.jpg" media="(min-width: 1024px)">
+                    <!-- img 當上述判斷讀取不到圖片時，或是，瀏覽器不支援時 -->
+                    <img id="Bannerimg" src="images/Banner/pimg001.jpg" alt="">
+                </picture>
             </ul>
 
         </div>

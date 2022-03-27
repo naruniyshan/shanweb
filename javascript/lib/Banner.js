@@ -1,5 +1,12 @@
 // 指定圖片路徑 陣列
-let images =['images/Banner/banner01.jpg', 'images/Banner/banner02.jpg', 'images/Banner/banner03.jpg', 'images/Banner/banner04.jpg', 'images/Banner/banner05.jpg'];
+// 電腦版
+let Pimages =['images/Banner/pimg001.jpg', 'images/Banner/pimg002.jpg', 'images/Banner/pimg003.jpg', 'images/Banner/pimg004.jpg', 'images/Banner/pimg005.jpg'];
+
+// 平版
+let Timages =['images/Banner/t/timg001.jpg', 'images/Banner/t/timg002.jpg', 'images/Banner/t/timg003.jpg', 'images/Banner/t/timg004.jpg', 'images/Banner/t/timg005.jpg'];
+
+// 手機
+let Simages =['images/Banner/s/simg001.jpg', 'images/Banner/s/simg002.jpg', 'images/Banner/s/simg003.jpg', 'images/Banner/s/simg004.jpg', 'images/Banner/s/simg005.jpg'];
 
 // 變數 記錄目前正在顯示第幾張圖片，儲存著圖片對應的索引編號。
 let current = 0;
@@ -8,8 +15,18 @@ let current = 0;
 let ChangeImage = function(num) {
     // 判斷式 條件 -- 索引編號 + 自訂參數值 >=0 和 索引編號 + 自訂參數值 < 圖片陣列的長度，同時成立時
 
-    current = ( current + num + images.length ) % images.length;
-    document.getElementById('Bannerimg').src = images[current];
+    current = ( current + num + Pimages.length ) % Pimages.length;
+    // img 預設圖
+    document.getElementById('Bannerimg').src = Pimages[current];
+
+    // 電腦版
+    document.getElementById('Pimg').srcset = Pimages[current];
+
+    // 平版
+    document.getElementById('Timg').srcset = Timages[current];
+
+    // 手機
+    document.getElementById('Simg').srcset = Simages[current];
 
     // current += num;
 
